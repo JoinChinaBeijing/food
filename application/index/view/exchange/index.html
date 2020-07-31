@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="__VENDOR__/css/admin/bootstrap.min.css">
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<head>
+  <title>兑换积分</title>
+</head>
+<body style="overflow: hidden;{if $uid == ''}background: #000000;{/if}">
+{if $uid == ''}
+    <div class="qrcode" style="margin: 5% auto;text-align:center;">
+        <img src="data:image/png;base64,{$data}">
+        <button type="button" class="btn btn-success" onclick="getUser()">查询</button>
+    </div>
+{else /}
+    <div class="container">
+        <table class="table table-hover">
+            <tr>
+                    <th>微信名</th>
+                    <th>总积分</th>
+                    <th>兑换积分</th>
+                    <th>剩余积分</th>
+                    <th width="20%">操作</th>
+                </tr>
+                {volist name="users" id="vo"}
+                <tr>
+                    <td>{$vo.nickname}</td>
+                    <td>{$vo.total_integral}</td>
+                    <td>{$vo.exchange_integral}</td>
+                    <td>{$vo.last}</td>
+                    <td>
+                        <button  class="btn btn-info btn-xs" onclick="show({$vo.id})">
+                            兑换积分
+                        </button>
+                    </td>
+                </tr>
+                {/volist}
+        </table>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="open col-md-4" style="background: #dddddd;border-radius: 5px; display: none;">
+        <div class="form-group" style="margin-top: 20px;">
+            <label >兑换个数</label>
+            <input type="number" id='exchange_integral' class="form-control">
+            <input type="text" id="uids" name="uid" hidden="true" value="">
+        </div>
+        <div style="float: right;margin-bottom: 10px;">
+            <button class="btn btn-danger" onclick="closeopen()">关闭</button>
+            <button class="btn btn-success" onclick="exchange()">兑换</button>
+        
+        </div>
+    </div>
+{/if}
+</body>
+<script>
+    function getUser()
+    {
+        $.getJSON("{:url('exchange/getuser')}",function(json){
+            if (json.uid != '')
+            {
+                window.location.href = "{:url('exchange/index')}?uid="+json.uid;
+            }
+            else
+            {
+                alert('扫描过期');
+            }
+        });
+    }
+
+    // 显示兑换
+    function show(uid)
+    {
+        $('#uids').val(uid);
+        $('.open').css('display', 'block');
+    }
+
+    // 关闭窗口
+    function closeopen()
+    {
+        $('.open').css('display', 'none');
+    }
+
+    // 兑换
+    function exchange()
+    {
+        uid = $('#uids').val();
+        exchange_integral = $('#exchange_integral').val();
+
+        if (exchange_integral <= 0)
+        {
+            alert('兑换数量不能小于零');
+            return false;
+        }
+
+        $.post("{:url('exchange/exchange')}",{uid:uid,exchange_integral:exchange_integral},function(json){
+            json = JSON.parse(json);
+
+            if (json.code == 200)
+            {
+                alert(json.message);
+                setTimeout(function(){window.location.reload(true)},2000);
+            }
+            else
+            {
+                alert(json.message);
+            }
+        });
+    }
+</script>
+</html>

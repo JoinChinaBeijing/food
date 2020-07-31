@@ -1,0 +1,134 @@
+<link rel="stylesheet" type="text/css" href="__VENDOR__/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/wu.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/icon.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/city.css" />
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__VENDOR__/js/admin/mybase.js"></script>
+
+<div id="operatBox">
+    <form action="{:url('Index/Integral/listintegral')}" id="search" method="post" style="display: inline-block; margin-top: 10px;">
+        <input type="text" name="name" id="searchContent" placeholder="用户ID" value="{$sidDesc}" style="height: 28px; margin-left: 20px; ">
+        <a href="#" data-options="iconCls:'icon-search'" onclick="mysearch()" class="easyui-linkbutton">搜索</a>
+    </form>
+    <a href="javascript:void(0)" id="editCity" class="easyui-menubutton"
+       data-options="iconCls:'icon-edit'" onclick="openEditWindow()">编辑</a>
+</div>
+
+<table id="dg"></table>
+
+<!--添加框-->
+
+<div id="win" class="easyui-window" title="积分"
+     data-options="iconCls:'icon-save',modal:true,closed:true,draggable:true,resizable:true">
+    <form name="addform" id="addform" action="" method="post"
+          enctype="multipart/form-data">
+        <input type="hidden" name="id" id="myid" value="">
+        <table>
+            <tr>
+                <td> 用户 :</td>
+                <td><input class="easyui-textbox myinput" id="uid" name="uid" readonly ></td>
+                <td> 积分:</td>
+                <td><input class="easyui-textbox myinput" id="integral" name="integral"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div style="float: right">
+                        <a onclick="saveStore()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-ok'">确定</a>
+                        <a onclick="closeAddWindow()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-no'">取消</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id= "mydialog" class="easyui-dialog" style="width:300px;height:150px;text-align:center;line-height: 65px;"
+         data-options="title:'系统提示',buttons:'#bb',modal:true,closed:true">
+    </div>
+    <div id="bb">
+        <a href="#" class="easyui-linkbutton" onclick="dodelete()">确认</a>
+        <a href="#" class="easyui-linkbutton" onclick="cancelBtn()">取消</a>
+    </div>
+</div>
+<script>
+    /*转为对象，初始化数据*/
+    datatlist = JSON.parse('{$listJson}');
+    if(datatlist == null){
+        datatlist = "";
+    }
+    $(document).ready(function () {
+        $('#dg').datagrid({
+            pagination: true,
+            rownumbers: true,
+            fitColumns: true,
+            singleSelect: true,
+            data: datatlist.slice(0, 10),
+            columns: [
+                [
+                    {field: 'uid', align: "center", title: "用户id", width: 100},
+                    {field: 'integral', align: "center", title: "积分", width: 100}
+
+                ]
+            ],
+        });
+        var datapager = $("#dg").datagrid("getPager");
+        datapager.pagination({
+            total: datatlist.length,
+            pageSize:10,
+            onSelectPage: function (pageNo, pageSize) {
+                var start = (pageNo - 1) * pageSize;
+                var end = start + pageSize;
+                $("#dg").datagrid("loadData", datatlist.slice(start, end));
+                datapager.pagination('refresh', {
+                    total: datatlist.length,
+                    pageNumber: pageNo
+                });
+            }
+        });
+        $('#win').window({
+            onClose: function () {
+                window.location.reload(true);
+            }
+        });
+    });
+
+    /*关闭添加窗口*/
+    function closeAddWindow() {
+        closeWindow("#win");
+        window.location.reload(true);
+    }
+
+    /*打开添加窗口*/
+    function openAddWindow() {
+        openWindow("#win");
+    }
+    /*保存数据*/
+    function saveStore() {
+        saveData("{:url('Index/Integral/addIntegral')}","#addform","#win");
+    }
+    /*打开编辑窗口*/
+    function openEditWindow() {
+        var row = $('#dg').datagrid('getSelected');
+        if (row){
+            /*给编辑窗口赋值*/
+            $("#myid").val(row.id);
+            $('#uid').textbox('setValue', row.uid);
+            $('#integral').textbox('setValue', row.integral);
+
+            $("#win").window({closed:false});
+        }
+    }
+    /*关闭对话框*/
+    function cancelBtn() {
+        closeWindow("#mydialog");
+        window.location.reload(true);
+    }
+</script>
+<script>
+    function mysearch() {
+        $("#search").submit();
+    }
+</script>
+

@@ -1,0 +1,372 @@
+---------------------------------------------------------------
+[ 2019-08-23T14:20:29+08:00 ] 127.0.0.1 GET www.food.com/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2019-08-23T14:20:47+08:00 ] 127.0.0.1 GET www.food.com/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2019-08-23T15:13:02+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：1.343293s] [吞吐率：0.74req/s] [内存消耗：1,523.75kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:13:25+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.313295s] [吞吐率：3.19req/s] [内存消耗：1,591.78kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[C:\phpStudy\PHPTutorial\WWW\tp\application\wechat\model\Wechat.php:229]
+---------------------------------------------------------------
+[ 2019-08-23T15:13:26+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.290122s] [吞吐率：3.45req/s] [内存消耗：1,591.50kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[C:\phpStudy\PHPTutorial\WWW\tp\application\wechat\model\Wechat.php:229]
+---------------------------------------------------------------
+[ 2019-08-23T15:13:45+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.265235s] [吞吐率：3.77req/s] [内存消耗：1,523.50kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:13:47+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.272891s] [吞吐率：3.66req/s] [内存消耗：1,523.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:18:11+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.337814s] [吞吐率：2.96req/s] [内存消耗：1,523.50kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:18:12+08:00 ] 127.0.0.1 GET www.food.com/home/ad/shareindex
+[运行时间：0.286671s] [吞吐率：3.49req/s] [内存消耗：1,523.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'ad',
+    2 => 'shareindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/ad/shareindex' => '',
+)
+[ info ] [ RUN ] app\home\controller\Ad->shareindex[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Ad.php ]
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:47:29+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.116216s] [吞吐率：8.60req/s] [内存消耗：1,617.09kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:47:54+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.243177s] [吞吐率：4.11req/s] [内存消耗：1,616.63kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=tqt48roma0i5jmuot04e5fvb51',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'sec-fetch-user' => '?F',
+  'sec-fetch-site' => 'cross-site',
+  'sec-fetch-dest' => 'document',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_2_5 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D60 Safari/604.1 wechatdevtools/1.02.1906062 MicroMessenger/7.0.4 webview/15665436156012033 webdebugger port/29731',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:48:26+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.140513s] [吞吐率：7.12req/s] [内存消耗：1,539.88kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8ek6omajsssmibdeel4p6c1e31',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-23T15:49:05+08:00 ] 127.0.0.1 GET www.food.com/home/index/index
+[运行时间：0.113571s] [吞吐率：8.81req/s] [内存消耗：1,543.41kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=8ek6omajsssmibdeel4p6c1e31',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ LOG ] INIT File

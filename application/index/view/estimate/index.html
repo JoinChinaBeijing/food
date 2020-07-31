@@ -1,0 +1,133 @@
+<link rel="stylesheet" type="text/css" href="__VENDOR__/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/wu.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/icon.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/city.css" />
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__VENDOR__/js/admin/mybase.js"></script>
+<div id="operatBox">
+    <form action="{:url('Index/Estimate/index')}" id="search" method="post" style="display: inline-block; margin-top: 10px;">
+        <input type="text" name="name" id="searchContent" placeholder="菜品名称" value="{$sidDesc}" style="height: 28px; margin-left: 20px; ">
+        <a href="#" data-options="iconCls:'icon-search'" onclick="mysearch()" class="easyui-linkbutton">搜索</a>
+    </form>
+</div>
+
+
+<table id="dg"></table>
+<script>
+    /*转为对象，初始化数据*/
+    datatlist = JSON.parse('{$listJson}');
+    if(datatlist == null){
+        datatlist = "";
+    }
+    $(document).ready(function () {
+        $('#dg').datagrid({
+            pagination: false,
+            rownumbers: true,
+            fitColumns: true,
+            singleSelect: true,
+            data: datatlist.slice(0, 9999999),
+            nowrap:true,
+            columns: [
+                [
+                    {field: 'name', align: "center", title: "名称", width: 100},
+                    {field: 'price', align: "center", title: "价格", width: 100},
+                    {field: 'unit', align: "center", title: "单位", width: 100},
+                    {field: 'categoryName', align: "center", title: "所属分类", width: 100},
+                    {field: 'statusName', align: "center", title: "菜品状态", width: 100},
+                    {field: 'store', align: "center", title: "所属店铺", width: 100},
+                    {field: 'opt',title:'操作',width:100,align:'center',
+                        formatter:function(value,rec) 
+                        {
+                            if (rec.status == 1)
+                            {
+                                var btn2 = '<a class="delecls" onclick="updateStatus('+rec.id+','+rec.sid+','+0+')" href="javascript:void(0)" rel="external nofollow" rel="external nofollow" rel="external nofollow" >下架</a>';
+
+                                return btn2;
+                            }
+                            else
+                            {
+                                var btn1 = '<a class="editcls" onclick="updateStatus('+rec.id+','+rec.sid+','+1+')" href="javascript:void(0)" rel="external nofollow" rel="external nofollow" rel="external nofollow" >上架</a>';
+
+                                return btn1;
+
+                            }
+                        }
+                    }
+                ]
+            ],
+            rowStyler:function(index,row) {
+                if (row.status == 0) {
+                    return 'background-color:pink;color:blue'
+                }
+            },
+
+        });
+        var datapager = $("#dg").datagrid("getPager");
+        datapager.pagination({
+            total: datatlist.length,
+            pageSize:10,
+            onSelectPage: function (pageNo, pageSize) {
+                var start = (pageNo - 1) * pageSize;
+                var end = start + pageSize;
+                $("#dg").datagrid("loadData", datatlist.slice(start, end));
+                datapager.pagination('refresh', {
+                    total: datatlist.length,
+                    pageNumber: pageNo
+                });
+            }
+        });
+
+        $('#win').window({
+            onClose: function () {
+                window.location.reload(true);
+            }
+        });
+
+        $('#ss').searchbox({
+            searcher:function(value,name){
+                alert(value + "," + name)
+            },
+            menu:'#mm',
+            prompt:'Please Input Value'
+        });
+
+
+    });
+
+    // 修改上下架
+    function updateStatus(fid, sid, status)
+    {
+        $.ajax({
+            url:"{:url('Index/Estimate/updatestatus')}",
+            type:"post",
+            data:{fid:fid,sid:sid,status:status},
+            success:function(data){
+                if(JSON.parse(data).code=='200'){
+                    $.messager.alert('系统提示',JSON.parse(data).message,'info');
+                    setTimeout(function(){window.location.reload(true)},3000);
+                }else {
+                    $.messager.show({
+                        title: '系统提示',
+                        msg: JSON.parse(data).message,
+                        showType: 'fade',
+                        style: {
+                            right: '',
+                            bottom: ''
+                        }
+                    });
+                    setTimeout(function(){window.location.reload(true)},3000);
+                }
+            }
+        });
+    }
+</script>
+<script>
+    function mysearch() {
+        $("#search").submit();
+    }
+</script>
+
+
+

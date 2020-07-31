@@ -1,0 +1,161 @@
+<link rel="stylesheet" type="text/css" href="__VENDOR__/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/wu.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/icon.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/city.css" />
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__VENDOR__/js/admin/mybase.js"></script>
+
+<div id="operatBox">
+    <a href="javascript:void(0)" id="addCity" class="easyui-menubutton"
+       data-options="iconCls:'icon-add'" onclick="openAddWindow()">添加</a>
+    <a href="javascript:void(0)" id="editCity" class="easyui-menubutton"
+       data-options="iconCls:'icon-edit'" onclick="openEditWindow()">编辑</a>
+</div>
+
+<table id="dg"></table>
+
+<!--添加框-->
+
+<div id="win" class="easyui-window" title="分类"
+     data-options="iconCls:'icon-save',modal:true,closed:true,draggable:true,resizable:true">
+    <form name="addform" id="addform" action="" method="post"
+          enctype="multipart/form-data">
+        <input type="hidden" name="id" id="myid" value="">
+        <table>
+            <tr>
+                <td> 店铺:</td>
+                <td>
+                    <select name="sid" class="easyui-combobox" id="sid" >
+                        <option value="0">选择店铺</option>
+                        {volist name="stores" id="vo"}
+                            <option value="{$vo.id}">{$vo.name}</option>
+                        {/volist}
+                    </select>
+                </td>
+                <td>是否启用 </td>
+                <td>
+                    <input type="radio" name="status" value="1" checked>是
+                    <input type="radio" name="status" value="0">否
+                </td>
+            </tr>
+            <tr >
+                <td> 选择分类:</td>
+                <td colspan="3">
+                    {volist name="categories" id="vo"}
+                        <input type="checkbox" name="cids[]"  value="{$vo.id}"><span>{$vo.name}</span>
+                    {/volist}
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div style="float: right">
+                        <a onclick="saveCategory()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-ok'">确定</a>
+                        <a onclick="closeAddWindow()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-no'">取消</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id= "mydialog" class="easyui-dialog" style="width:300px;height:150px;text-align:center;line-height: 65px;"
+         data-options="title:'系统提示',buttons:'#bb',modal:true,closed:true">
+    </div>
+    <div id="bb">
+        <a href="#" class="easyui-linkbutton" onclick="dodelete()">确认</a>
+        <a href="#" class="easyui-linkbutton" onclick="cancelBtn()">取消</a>
+    </div>
+</div>
+<script>
+    /*转为对象，初始化数据*/
+    datatlist = JSON.parse('{$listJson}');
+    if(datatlist == null){
+        datatlist = "";
+    }
+    $(document).ready(function () {
+        $('#dg').datagrid({
+            pagination: true,
+            rownumbers: true,
+            fitColumns: true,
+            singleSelect: true,
+            data: datatlist.slice(0, 10),
+            columns: [
+                [
+                    {field: 'sidDesc', align: "center", title: "店铺", width: 100},
+                    {field: 'cidsDesc', align: "center", title: "包含分类", width: 100},
+                    {field: 'statusDesc', align: "center", title: "状态", width: 100}
+                ]
+            ],
+            rowStyler:function(index,row) {
+                if (row.status == 0) {
+                    return 'background-color:pink;color:blue'
+                }
+            }
+        });
+        var datapager = $("#dg").datagrid("getPager");
+        datapager.pagination({
+            total: datatlist.length,
+            pageSize:10,
+            onSelectPage: function (pageNo, pageSize) {
+                var start = (pageNo - 1) * pageSize;
+                var end = start + pageSize;
+                $("#dg").datagrid("loadData", datatlist.slice(start, end));
+                datapager.pagination('refresh', {
+                    total: datatlist.length,
+                    pageNumber: pageNo
+                });
+            }
+        });
+        $('#win').window({
+            onClose: function () {
+                window.location.reload(true);
+            }
+        });
+    });
+
+    /*关闭添加窗口*/
+    function closeAddWindow() {
+        closeWindow("#win");
+        window.location.reload(true);
+    }
+    /*打开添加窗口*/
+    function openAddWindow() {
+        openWindow("#win");
+    }
+    /*保存数据*/
+    function saveCategory() {
+        saveData("{:url('Index/Storecate/addStoreCate')}","#addform","#win");
+    }
+    /*打开编辑窗口*/
+    function openEditWindow() {
+        var row = $('#dg').datagrid('getSelected');
+        if (row){
+            $("#myid").val(row.id);
+            /*给编辑窗口赋值*/
+            $("#sid").combobox('readonly',true);
+            $("#sid").combobox("setValue",row.sid);
+            var  cidarr = row.cids.split(',');
+            for (var i=0;i<cidarr.length;i++ ){
+                $("input[value="+cidarr[i]+"]").attr("checked","checked");
+            }
+            if(row.status == 1){
+                $("input[name='status'][value='1']").attr('checked',true);
+            }else{
+                $("input[name='status'][value='0']").attr('checked',true);
+            }
+            $("#win").window({closed:false});
+        }
+    }
+    /*关闭对话框*/
+    function cancelBtn() {
+        window.location.reload(true);
+        closeWindow("#mydialog");
+
+    }
+</script>
+
+
+
+

@@ -1,0 +1,1393 @@
+---------------------------------------------------------------
+[ 2019-12-08T00:12:52+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094329s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.061703s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.079380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.060290s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.061012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.060119s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061811s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.060421s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.062111s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.060921s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.064228s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.060278s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.061140s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.060673s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.061601s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.059301s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.061426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.075066s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.060240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.059805s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.061006s ]
+[ error ] [8]未定义数组索引: chosenum
+---------------------------------------------------------------
+[ 2019-12-08T00:13:11+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094764s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.062013s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.062222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.062693s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.059606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059765s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.061439s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062152s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.063450s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.061092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.059479s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062769s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.059265s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.061139s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.059318s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.059655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059968s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.061809s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:13:17+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096735s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061252s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.066912s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:13:19+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079736s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051569s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.054847s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050711s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.086210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.054605s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.067798s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.050632s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.050840s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.050220s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.050006s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.050465s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.062993s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.051407s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.052139s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.050842s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.064817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.051336s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.050258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.050715s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.050635s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:14:28+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072321s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.046362s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.047033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.046841s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.048190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.045974s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.045846s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.044857s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.044631s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:14:31+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084826s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.071911s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.054146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053811s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.054254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.053225s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.052965s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054124s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:14:40+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099515s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.053379s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.051165s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:14:42+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085908s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.057168s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.055821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.056023s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.055440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.054557s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.068688s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.055279s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.079670s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.054621s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.284986s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055938s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.053931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.054822s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.056054s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.054326s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.054289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.056931s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.054677s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.055291s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.053828s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:15:06+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088755s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.057575s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.051640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.051120s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.050943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.049880s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.050751s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.053025s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.049905s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.053324s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.055052s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055412s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.051542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.052216s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.051912s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.049777s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.050607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.050995s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.076493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.052647s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.049332s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:16:27+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083469s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.054349s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.054062s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051899s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.110161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.088411s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.103444s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.110660s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.078504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.069295s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.051477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052246s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053538s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.051212s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.051605s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.049940s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.050655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050839s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.132983s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:16:31+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091399s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.058214s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.062160s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.057588s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.059573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.057178s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.056519s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061107s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:16:39+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130638s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.068666s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.068548s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:17:56+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083541s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051587s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.050291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050095s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.049560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.050526s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.048931s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.051942s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.049367s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.052255s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.049555s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.052246s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.048354s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.060232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.049862s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.085744s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.049556s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.049466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.061166s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.048905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.049798s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.048931s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:18:02+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075450s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.048118s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.055411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.070496s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.056896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.047453s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.047227s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.047321s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053872s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.047356s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.046836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.046965s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.046645s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.052819s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.046820s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.046524s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.049166s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.047978s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.050840s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:18:06+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067407s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.042453s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.040585s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.041183s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.039012s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.039389s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.040651s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.040442s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:18:10+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079895s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.054596s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.050195s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:18:11+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076938s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.056932s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.050133s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061718s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.053297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.049699s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.052631s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.051225s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.050464s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.051147s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.050854s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.050070s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.048955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.050339s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.051549s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.052118s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.052223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.051587s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.050328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.053553s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.049048s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:25:34+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094250s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.073988s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.074619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059587s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.058491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.060890s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.059759s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.058061s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.061639s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:25:39+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106157s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.069203s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.070046s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.072543s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.066317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.089384s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.066014s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066367s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:25:42+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070733s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.048448s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.047070s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:25:44+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093612s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.063902s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.060979s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061247s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.063388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.062143s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.061893s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.060908s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.060499s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.060365s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.063112s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.063277s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.060007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.062235s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.060589s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.060581s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.060712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.061713s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.060435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.060651s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.060327s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:30:30+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066090s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.041080s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.041685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.040851s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.039693s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.040404s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.040126s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.040277s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:30:32+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081243s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.061199s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.055400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053490s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.052172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052691s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.052809s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054741s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:30:38+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.075173s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050186s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.048635s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:30:40+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095904s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.057519s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.056298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055893s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.056578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.056825s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.057495s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.055547s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.058017s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '43' [ RunTime:0.057106s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.055124s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.056459s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055879s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.055595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.055636s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.056673s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.058098s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.055826s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.056468s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.070689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.057052s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.055950s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:30:53+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088537s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059284s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.057353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.057672s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.059285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059020s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.056943s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058106s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.058915s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.057166s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:03+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082712s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.051885s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.054580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051029s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.052394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052967s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.051364s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051520s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051027s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.052762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.051867s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051431s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.050613s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.050338s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.056758s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.052208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055009s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.063933s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:14+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081330s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.054139s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.052715s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:16+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081321s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.055678s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.053409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.051842s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.052743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052482s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.055047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.051594s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.051922s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.052069s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '43' [ RunTime:0.059208s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.052533s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.051677s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051608s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.054877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.052139s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.053993s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.052006s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.051834s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.053085s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.053647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.053509s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.052017s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:37+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086401s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060143s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.054131s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.052886s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.051332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.053626s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.052795s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058157s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:53+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083686s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.055366s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.053199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.061273s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.051863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.053367s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.054177s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057889s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051784s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.051599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052954s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051392s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.050843s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.050945s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.050972s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.051234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.052026s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.055823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.052113s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.052569s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:58+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081207s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.051536s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.051615s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:31:59+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077104s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051434s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.050315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.049905s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.050689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.049120s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.053539s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.049695s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.052163s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '43' [ RunTime:0.048670s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.051973s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.050059s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051143s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.050228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.051443s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.051200s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.050010s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.049029s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.051316s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.048775s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.051614s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.048685s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:32:25+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082549s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052664s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.055640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053981s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.053700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.051663s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.051917s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053562s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:32:27+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084394s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.054012s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.054158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.054056s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.053543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052467s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.054803s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053179s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:32:32+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.070887s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.046383s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.046593s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:32:34+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069232s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.044539s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.045468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.044866s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.045165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.045985s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.046421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.043535s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.044690s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.043897s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '43' [ RunTime:0.043278s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.050514s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.043704s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.042271s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.044136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.043215s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.043008s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.043655s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.043801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.043243s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.043228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.045550s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.042569s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:33:12+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080029s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.053483s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.051800s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.051715s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.052526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052755s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.052013s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.052925s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.051500s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '43' [ RunTime:0.053448s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.052854s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.053849s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051161s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.052112s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.050758s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.051641s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.050882s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.051625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.051096s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.050741s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.053894s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.052362s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:33:15+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087467s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.057995s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.058711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059396s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.056599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.062723s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.060867s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057474s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.056740s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.055686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.057182s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057257s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.057465s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.057645s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.056276s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.056406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.058696s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.062197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.057093s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.056499s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:33:19+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091715s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059907s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.064809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.058578s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.064831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059721s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.061172s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059672s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:33:24+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079357s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059829s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.062819s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:33:25+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095034s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.069811s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.066842s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.062204s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.062444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.061329s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.061561s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.061398s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.062173s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.060428s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.062464s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.060375s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.060094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.062716s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.063999s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.065019s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.061861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.062537s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.061452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.063221s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.063997s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:34:03+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094209s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.061498s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.060756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.060867s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.059556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.060416s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.061079s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060983s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.060348s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.062055s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060972s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.059556s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.061533s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.060012s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.062625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061344s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.061911s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.059857s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.059382s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:34:06+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.105673s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.069731s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.068558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.070284s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.067462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.067919s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.068096s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067392s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:34:10+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081651s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.054914s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.053851s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:34:12+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076809s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.049257s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.049065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050187s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.053185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.049013s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.048695s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.048553s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.048246s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.048579s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.051230s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.049703s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.048116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.048718s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.048721s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.048421s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.050781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.048840s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.053645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.057812s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.049797s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:35:44+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.066609s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.039748s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.039384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.038700s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.040148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.038851s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.038142s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.039225s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.039790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.040448s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.038145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.039035s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.037976s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.040584s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.041295s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.037950s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.038405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.038511s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.039639s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.038806s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.037928s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:35:47+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085684s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.063519s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.088532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.103139s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.055355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052876s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.052789s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052622s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:35:52+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084189s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.054911s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.054391s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:35:54+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102055s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.069215s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.067308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.066602s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.066892s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.066129s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.066841s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.065849s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.067300s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.065403s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.065761s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.065563s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.066726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.067293s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.067504s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.067174s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.066961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.068328s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.065431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.069706s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.065429s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:06+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100112s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.066760s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.065116s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.065049s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.066704s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.065348s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.072396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.064633s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.064350s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.064639s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.064485s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.064602s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.063798s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.064471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.065490s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.071065s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.064243s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.064197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.065635s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.064714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.066592s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.064188s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:22+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096745s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060509s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.060563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059736s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.059473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.063555s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.058887s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059778s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.058330s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.060084s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060689s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.058712s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.059012s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.058723s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.057871s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059376s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.059543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.059413s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.059165s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:25+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090153s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060233s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.060312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059149s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.057134s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.058389s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.059867s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057867s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:32+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.240841s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.169563s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.132370s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:34+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.313732s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.060186s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.100079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.161725s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.138393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.135197s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.183805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.192563s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.178979s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.084046s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.049877s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.049099s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051043s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.049172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.050629s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.051631s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.049601s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.049163s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.049864s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.050186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.051093s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.049973s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:39+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090159s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060921s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.060433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.058953s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.057998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.058828s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.058378s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063126s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:41+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093589s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060953s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.059317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059493s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.058708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.058967s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.059321s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061720s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:51+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.106923s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059003s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.061058s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:53+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090920s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.059655s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059074s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059816s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.058729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.057458s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.057895s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.057789s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.058803s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.073050s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '6' [ RunTime:0.058143s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.057902s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '41' [ RunTime:0.058073s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.059895s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.057773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.058395s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.058742s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.058961s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.058649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.057585s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.058687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.058587s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.057743s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:36:57+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083472s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053145s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.052505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051727s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.057970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.055353s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.052145s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052500s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:00+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093457s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.056046s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.051421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051183s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.050875s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.051732s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.050949s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052159s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:14+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085233s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055886s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.058479s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:16+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.103004s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.066506s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.063882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.065255s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.065440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.065018s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.063720s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.063181s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.063579s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.062816s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '6' [ RunTime:0.066607s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.064979s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '41' [ RunTime:0.062831s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.064586s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '8' [ RunTime:0.063263s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.064334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.065886s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.064216s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.063899s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.063616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.069901s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.067886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.064065s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.062674s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:33+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096269s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.062352s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.063439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.062530s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.060100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.060317s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.064843s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060361s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:36+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094758s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.062299s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.060963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.061599s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.060103s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.060203s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.060385s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059922s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:37:46+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.069341s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.043973s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.044038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.043811s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.050233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.044254s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.043824s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.043013s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:38:04+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072186s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.048536s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.046506s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:38:05+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089926s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.059775s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059037s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061791s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.061299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.058429s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059484s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.064751s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.059930s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.058624s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.058030s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '5' [ RunTime:0.060202s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.061612s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.059060s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.059024s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.063400s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.059090s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.058159s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.058890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.058788s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.058114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.061865s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.058260s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:42:20+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085794s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.054774s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.054249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.056742s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.056114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.065996s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.055259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.055688s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.053944s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.054949s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.055172s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '5' [ RunTime:0.057022s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.080109s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055606s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.054466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.055534s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.055225s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.056184s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.055387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.055830s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.054664s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:55:43+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082676s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.050557s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.050272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.048680s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.050643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.050567s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.048147s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.048805s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.050309s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.051477s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.047702s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '5' [ RunTime:0.047721s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.049401s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.052312s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.049436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.048472s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.047825s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.048073s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.049405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.048614s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.048719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.049339s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.048316s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:56:36+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074184s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.048476s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.047342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.049642s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.047960s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052543s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.046025s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.048405s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.046295s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.046364s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.045978s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '5' [ RunTime:0.047605s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.047397s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.054322s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.046316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.056774s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.046483s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.046602s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.047756s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.046205s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.049090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.046627s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.045786s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:58:14+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080075s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052002s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.052294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053390s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.049839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050400s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.050291s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050903s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:58:16+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087246s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053827s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.052518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.050237s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.054237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050099s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.050804s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052338s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:58:27+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091181s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.058212s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.057065s ]
+---------------------------------------------------------------
+[ 2019-12-08T00:58:28+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.085728s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.054504s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.054387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.053526s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.055377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052981s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.056636s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.053980s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.055147s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.052777s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.054952s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.058620s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051989s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.053554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.056293s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.055419s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.054301s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.054237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.053897s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.053751s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.054424s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.053056s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:00:45+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098091s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.062532s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.061392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061810s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.064736s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.063226s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.070660s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.062496s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.061965s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.061288s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.061851s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.061462s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.066136s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.183821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.093372s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.082594s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.061513s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.063102s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.063235s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.063105s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.061645s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.061349s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:01:57+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093614s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059683s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.132301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.660580s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.159973s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059757s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.058290s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.061744s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.056936s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:02:02+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.766224s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.310618s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.088485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.069705s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.075198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.251872s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.310109s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.826577s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:02:14+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083699s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.052162s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.052308s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:02:17+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.095531s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.062111s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.065896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.060253s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.060559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.060430s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061060s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.059810s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.094243s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.132681s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.514086s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.091172s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.092256s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.385825s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.261114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.133921s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.103495s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.178428s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.144263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.127893s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.222770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.121241s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.076383s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:02:41+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084928s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.052665s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.054527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055057s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.053351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.056897s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052120s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.051388s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.053050s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.052938s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.052022s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.052073s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.051173s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.050657s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.058269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.054871s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.052207s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.051942s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.052268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.052618s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.052214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.052049s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.061374s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:03:45+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090883s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059601s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.057227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.056203s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.058656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.056584s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.057072s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057479s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.057221s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.056397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.058284s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059632s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.056048s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.065509s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.057029s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.059576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.058906s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`unit`,`s`.`status` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.087914s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:03:47+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083145s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052558s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.055890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051697s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.051580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052070s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.051195s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050861s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:03:53+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091615s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.056219s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.058425s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:03:55+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082653s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.053941s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.053608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059399s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.056059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052834s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.059351s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.053440s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.054969s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.056853s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.078462s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.054273s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.053811s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.058148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.056160s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.052876s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.053265s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.053442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.053182s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.052817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.052922s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.053919s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:04:55+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.092078s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053590s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.053334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.057056s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.051964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052647s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.054921s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053066s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:04:57+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093910s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052793s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.050263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.049882s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.050711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.054935s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.049642s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050126s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:04+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084170s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.060718s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.061084s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:06+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093308s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.060387s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.061556s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.059066s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.057589s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059083s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.058295s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.058641s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.060561s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.060926s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.061449s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.057623s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.058974s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.058224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.057050s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.057114s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.061796s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.057366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.058866s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.058288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.059017s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.057689s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:37+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098609s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.064554s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.064135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.062920s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.063596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.063279s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.063521s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064825s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:40+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.091334s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.067594s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `district` = 0 [ RunTime:0.129463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.180407s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.158333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.092698s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `type` = 'food'  AND `uid` = 2 LIMIT 1 [ RunTime:0.062692s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058879s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:55+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084870s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.052109s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `ischose` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1  AND `s`.`sid` = '1'  AND `f`.`cid` = 1 [ RunTime:0.052179s ]
+---------------------------------------------------------------
+[ 2019-12-08T01:05:57+08:00 ] 127.0.0.1 POST www.food.com/home/order/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.102632s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.104024s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.068582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.087787s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`name`,`picdate`,`pic`,`price`,`discount`,`cid`,`s`.`sid`,`disstatus`,`deftaste`,`unit` FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = '1' [ RunTime:0.069518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.068336s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food_taste` [ RunTime:0.068332s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '44' [ RunTime:0.067581s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '45' [ RunTime:0.066520s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.067545s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.066883s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '39' [ RunTime:0.092010s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.101532s ]
+[ sql ] [ SQL ] SELECT * FROM `food_taste` `f` RIGHT JOIN `taste` `t` ON `f`.`tid`=`t`.`id` WHERE  `f`.`fid` = '29' [ RunTime:0.068167s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.066297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_address` [ RunTime:0.080118s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `sort` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC LIMIT 1 [ RunTime:0.066597s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `default` = '1'  AND `type` = 0 LIMIT 1 [ RunTime:0.066242s ]
+[ sql ] [ SQL ] SELECT * FROM `user_address` WHERE  `uid` = 2  AND `store` = 1  AND `type` = 0  AND `deleted` = 0 ORDER BY `id` DESC [ RunTime:0.067453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_school` [ RunTime:0.066302s ]
+[ sql ] [ SQL ] SELECT * FROM `store_school` `s` RIGHT JOIN `school` `c` ON `s`.`scid`=`c`.`id` WHERE  `sid` = 1  AND `c`.`status` = 1 [ RunTime:0.074063s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zqinfo` [ RunTime:0.067241s ]
+[ sql ] [ SQL ] SELECT * FROM `zqinfo` WHERE  `uid` = 2 LIMIT 1 [ RunTime:0.068518s ]

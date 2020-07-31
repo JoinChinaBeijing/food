@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>返回消息</title>
+</head>
+<body>
+<script type="text/javascript">
+    alert('{$message}');
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {  
+        WeixinJSBridge.call('hideOptionMenu');  
+    });
+    setTimeout('WeixinJSBridge.call("closeWindow")', 1000);
+</script>
+</body>
+</html>

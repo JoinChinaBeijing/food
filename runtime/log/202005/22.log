@@ -1,0 +1,3731 @@
+---------------------------------------------------------------
+[ 2020-05-22T11:01:59+08:00 ] 0.0.0.0 GET localhost/tp/public/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2020-05-22T11:10:24+08:00 ] 127.0.0.1 GET 127.0.0.1/tp/public/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2020-05-22T11:12:43+08:00 ] 127.0.0.1 GET www.food.com/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2020-05-22T11:12:47+08:00 ] 127.0.0.1 GET www.food.com/
+[ error ] [0]Redis server went away
+---------------------------------------------------------------
+[ 2020-05-22T11:16:17+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：2.146650s] [吞吐率：0.47req/s] [内存消耗：1,552.22kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]Redis server went away[C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\library\think\cache\driver\Redis.php:57]
+---------------------------------------------------------------
+[ 2020-05-22T11:29:02+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.287611s] [吞吐率：3.48req/s] [内存消耗：1,617.28kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:29:15+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.130009s] [吞吐率：7.69req/s] [内存消耗：1,616.34kb] [文件加载：53]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:29:52+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.083766s] [吞吐率：11.94req/s] [内存消耗：1,631.11kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:30:19+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.086289s] [吞吐率：11.59req/s] [内存消耗：1,631.57kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:30:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.278723s] [吞吐率：3.59req/s] [内存消耗：1,631.21kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:34:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.163424s] [吞吐率：6.12req/s] [内存消耗：1,635.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:37:32+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.132528s] [吞吐率：7.55req/s] [内存消耗：1,631.92kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:47:50+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.126495s] [吞吐率：7.91req/s] [内存消耗：1,632.80kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:47:51+08:00 ] 127.0.0.1 GET www.food.com/js/admin/jshhSwipe.js
+[运行时间：0.084502s] [吞吐率：11.83req/s] [内存消耗：1,244.59kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'admin',
+    2 => 'jshhSwipe.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/index/resume/liquor',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/js/admin/jshhSwipe_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:47:59+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.098938s] [吞吐率：10.11req/s] [内存消耗：1,509.97kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:47:59+08:00 ] 127.0.0.1 GET www.food.com/js/admin/jshhSwipe.js
+[运行时间：0.074706s] [吞吐率：13.39req/s] [内存消耗：1,244.59kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'admin',
+    2 => 'jshhSwipe.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/index/resume/liquor',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/js/admin/jshhSwipe_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:48:20+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.122785s] [吞吐率：8.14req/s] [内存消耗：1,627.60kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:48:20+08:00 ] 127.0.0.1 GET www.food.com/js/admin/jshhSwipe.js
+[运行时间：0.118821s] [吞吐率：8.42req/s] [内存消耗：1,244.59kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'admin',
+    2 => 'jshhSwipe.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/index/resume/liquor',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/js/admin/jshhSwipe_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:48:55+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.183922s] [吞吐率：5.44req/s] [内存消耗：1,627.55kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:51:09+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.144822s] [吞吐率：6.91req/s] [内存消耗：1,627.71kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:57:27+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.224517s] [吞吐率：4.45req/s] [内存消耗：1,629.05kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T11:58:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.097967s] [吞吐率：10.21req/s] [内存消耗：1,628.51kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:00:16+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.139341s] [吞吐率：7.18req/s] [内存消耗：1,628.63kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:00:32+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.094389s] [吞吐率：10.59req/s] [内存消耗：1,628.63kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:02:00+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.153128s] [吞吐率：6.53req/s] [内存消耗：1,628.70kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:03:48+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.098177s] [吞吐率：10.19req/s] [内存消耗：1,628.60kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:04:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.100179s] [吞吐率：9.98req/s] [内存消耗：1,628.57kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:06:10+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.105509s] [吞吐率：9.48req/s] [内存消耗：1,629.29kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:06:53+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.069195s] [吞吐率：14.45req/s] [内存消耗：1,628.59kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:07:12+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.077308s] [吞吐率：12.94req/s] [内存消耗：1,628.59kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:08:09+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.088522s] [吞吐率：11.30req/s] [内存消耗：1,628.77kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:09:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.124723s] [吞吐率：8.02req/s] [内存消耗：1,628.88kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:09:29+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.113665s] [吞吐率：8.80req/s] [内存消耗：1,628.88kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:09:45+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.110844s] [吞吐率：9.02req/s] [内存消耗：1,628.90kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:11:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.091016s] [吞吐率：10.99req/s] [内存消耗：1,629.13kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:11:10+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.147873s] [吞吐率：6.76req/s] [内存消耗：1,629.13kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:12:04+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.088737s] [吞吐率：11.27req/s] [内存消耗：1,629.16kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:17:32+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.076754s] [吞吐率：13.03req/s] [内存消耗：1,631.08kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:21:50+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.119644s] [吞吐率：8.36req/s] [内存消耗：1,631.51kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:24:30+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.119401s] [吞吐率：8.38req/s] [内存消耗：1,631.76kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:24:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.100861s] [吞吐率：9.91req/s] [内存消耗：1,631.76kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:25:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.079014s] [吞吐率：12.66req/s] [内存消耗：1,632.46kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:31:41+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.127337s] [吞吐率：7.85req/s] [内存消耗：1,632.53kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:34:22+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.132405s] [吞吐率：7.55req/s] [内存消耗：1,632.27kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:35:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.096876s] [吞吐率：10.32req/s] [内存消耗：1,632.27kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:35:04+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.071774s] [吞吐率：13.93req/s] [内存消耗：1,509.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:35:05+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.080367s] [吞吐率：12.44req/s] [内存消耗：1,509.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:35:15+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.110162s] [吞吐率：9.08req/s] [内存消耗：1,632.20kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:36:09+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.095407s] [吞吐率：10.48req/s] [内存消耗：1,632.27kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:36:11+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.069711s] [吞吐率：14.34req/s] [内存消耗：1,509.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:36:12+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.070880s] [吞吐率：14.11req/s] [内存消耗：1,509.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:36:43+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.141636s] [吞吐率：7.06req/s] [内存消耗：1,632.29kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:38:30+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.144622s] [吞吐率：6.91req/s] [内存消耗：1,633.13kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:38:54+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.101597s] [吞吐率：9.84req/s] [内存消耗：1,633.13kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:39:52+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.106776s] [吞吐率：9.37req/s] [内存消耗：1,634.00kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:40:25+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.086508s] [吞吐率：11.56req/s] [内存消耗：1,633.92kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:40:40+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.093789s] [吞吐率：10.66req/s] [内存消耗：1,633.92kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:41:07+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.110732s] [吞吐率：9.03req/s] [内存消耗：1,633.70kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:41:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.097871s] [吞吐率：10.22req/s] [内存消耗：1,633.68kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:41:48+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.127976s] [吞吐率：7.81req/s] [内存消耗：1,633.68kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:41:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.139682s] [吞吐率：7.16req/s] [内存消耗：1,633.68kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:43:37+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.112376s] [吞吐率：8.90req/s] [内存消耗：1,633.70kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:49:46+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.123052s] [吞吐率：8.13req/s] [内存消耗：1,634.39kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:49:48+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.086169s] [吞吐率：11.61req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:50:01+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.103615s] [吞吐率：9.65req/s] [内存消耗：1,633.70kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:50:02+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.077252s] [吞吐率：12.94req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:50:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.071349s] [吞吐率：14.02req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:50:54+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.116815s] [吞吐率：8.56req/s] [内存消耗：1,633.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:50:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.079720s] [吞吐率：12.54req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:51:14+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.089321s] [吞吐率：11.20req/s] [内存消耗：1,633.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:51:16+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.068121s] [吞吐率：14.68req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:52:54+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.096345s] [吞吐率：10.38req/s] [内存消耗：1,633.85kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:52:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.082489s] [吞吐率：12.12req/s] [内存消耗：1,510.01kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:53:55+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.098957s] [吞吐率：10.11req/s] [内存消耗：1,633.65kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:53:57+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.089001s] [吞吐率：11.24req/s] [内存消耗：1,510.00kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:54:53+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.084859s] [吞吐率：11.78req/s] [内存消耗：1,633.60kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:55:05+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.103233s] [吞吐率：9.69req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:56:36+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.091897s] [吞吐率：10.88req/s] [内存消耗：1,633.66kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:56:37+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.066712s] [吞吐率：14.99req/s] [内存消耗：1,509.99kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:58:06+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.115634s] [吞吐率：8.65req/s] [内存消耗：1,634.34kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:58:17+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.123357s] [吞吐率：8.11req/s] [内存消耗：1,633.70kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:58:44+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.089327s] [吞吐率：11.19req/s] [内存消耗：1,633.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:59:43+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.124947s] [吞吐率：8.00req/s] [内存消耗：1,633.75kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T12:59:46+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.071707s] [吞吐率：13.95req/s] [内存消耗：1,510.00kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:00:35+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.136659s] [吞吐率：7.32req/s] [内存消耗：1,633.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:03:32+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.144397s] [吞吐率：6.93req/s] [内存消耗：1,634.02kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:12:14+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.092653s] [吞吐率：10.79req/s] [内存消耗：1,634.88kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:13:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.097040s] [吞吐率：10.31req/s] [内存消耗：1,634.30kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:13:48+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.106574s] [吞吐率：9.38req/s] [内存消耗：1,634.30kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:13:59+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.115764s] [吞吐率：8.64req/s] [内存消耗：1,634.30kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:15:02+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.122087s] [吞吐率：8.19req/s] [内存消耗：1,634.52kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:15:16+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.087644s] [吞吐率：11.41req/s] [内存消耗：1,634.52kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:16:22+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.119277s] [吞吐率：8.38req/s] [内存消耗：1,634.52kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:19:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.116473s] [吞吐率：8.59req/s] [内存消耗：1,634.43kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:22:24+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.088775s] [吞吐率：11.26req/s] [内存消耗：1,635.78kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:23:17+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.110491s] [吞吐率：9.05req/s] [内存消耗：1,635.11kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:30:29+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.144449s] [吞吐率：6.92req/s] [内存消耗：1,635.80kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:31:17+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.173770s] [吞吐率：5.75req/s] [内存消耗：1,635.23kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:31:39+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.146868s] [吞吐率：6.81req/s] [内存消耗：1,509.95kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:31:57+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.086058s] [吞吐率：11.62req/s] [内存消耗：1,635.16kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:34:03+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.115174s] [吞吐率：8.68req/s] [内存消耗：1,635.37kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:37:36+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.153631s] [吞吐率：6.51req/s] [内存消耗：1,635.33kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:38:52+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.112526s] [吞吐率：8.89req/s] [内存消耗：1,635.98kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:42:16+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.190613s] [吞吐率：5.25req/s] [内存消耗：1,635.39kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:42:25+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.136333s] [吞吐率：7.33req/s] [内存消耗：1,635.37kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:54:56+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.198307s] [吞吐率：5.04req/s] [内存消耗：1,636.42kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:55:44+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.125362s] [吞吐率：7.98req/s] [内存消耗：1,635.82kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:56:15+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.088267s] [吞吐率：11.33req/s] [内存消耗：1,635.88kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:56:16+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.067705s] [吞吐率：14.77req/s] [内存消耗：1,509.95kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:56:58+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.115155s] [吞吐率：8.68req/s] [内存消耗：1,635.91kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:57:25+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.087190s] [吞吐率：11.47req/s] [内存消耗：1,635.93kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T13:57:54+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.079161s] [吞吐率：12.63req/s] [内存消耗：1,635.98kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:03:42+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.082381s] [吞吐率：12.14req/s] [内存消耗：1,636.59kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:04:31+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.120810s] [吞吐率：8.28req/s] [内存消耗：1,636.09kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:04:33+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.075644s] [吞吐率：13.22req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:04:34+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.082522s] [吞吐率：12.12req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:04:35+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.113105s] [吞吐率：8.84req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:04:35+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.086675s] [吞吐率：11.54req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:05:07+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.091607s] [吞吐率：10.92req/s] [内存消耗：1,509.98kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:05:25+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.117192s] [吞吐率：8.53req/s] [内存消耗：1,636.09kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:05:37+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.107667s] [吞吐率：9.29req/s] [内存消耗：1,636.09kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:07:47+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.118776s] [吞吐率：8.42req/s] [内存消耗：1,636.16kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:07:48+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.096797s] [吞吐率：10.33req/s] [内存消耗：1,509.97kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-05-22T14:07:57+08:00 ] 127.0.0.1 GET www.food.com/index/resume/liquor
+[运行时间：0.077493s] [吞吐率：12.90req/s] [内存消耗：1,636.12kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'resume',
+    2 => 'liquor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=giistc78lq5ouddnl4gnufpp14',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/index/resume/liquor' => '',
+)
+[ info ] [ RUN ] app\index\controller\Resume->liquor[ C:\phpStudy\PHPTutorial\WWW\tp\application\index\controller\Resume.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/index\view\resume\liquor.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

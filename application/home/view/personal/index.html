@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>积分中心</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            padding: 5px;
+            background: #F3F4D5;;
+        }
+        #personalBox{
+            width: 100%;
+            height: 25em;
+            padding-top: 5em;
+            background: url("./../../images/personal.png") no-repeat;
+            background-size:100% 100%;
+        }
+        #personal{
+            width: 100%;height: 10em;display: flex;justify-content: space-around;
+        }
+        .personalimg{
+            width: 10em;height: 10em;border-radius: 50%;
+        }
+
+        .personalimg>img{
+            width: 100%;height: 100%;border-radius: 50%;
+        }
+        #nickname{
+            display:block;text-align: center;font-size: 2em;height: 3em;line-height: 2.5em;
+        }
+        #personalnum{
+            display:block;text-align: center;font-size: 1.5em;height: 3em;line-height: 1.5em;
+        }
+        .personalRuleBox{
+            width: 100%;min-height:60em;
+        }
+        .rules{
+            min-height: 30em;width: 100%;
+        }
+        .ruledetail{
+            height: 5em;width: 100%;border-left: 1em solid #00C853;box-sizing: border-box;
+        }
+        .ruledetail>span{
+            font-size: 2em;line-height: 2.5em;display: inline-block;margin-left: 0.5em;
+        }
+        .ruledetail>p{
+            font-size: 2em;
+            line-height: 2em;
+        }
+    </style>
+</head>
+
+<body>
+<div id="personalBox">
+    <div id="personal">
+        <div  class="personalimg" style="">
+            <img src="{$personalData.userimg}" alt="">
+        </div>
+    </div>
+    <p id="nickname">{$personalData.user}&nbsp;( ID:{$personalData.uid} )</p>
+    <p id="personalnum">个人积分：{$personalData.selfIntegral}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;饺豆：{$personalData.lastpersonal}</p>
+</div>
+<div class="personalRuleBox">
+    <div class="rules" style="margin-top: 2em;">
+        <div class="ruledetail">
+            <span>个人积分：</span>
+            <p>1、积攒方式：通过官方微信公众号购买产品，目前消费1元兑换1积分,非整数金额将向下取整计算积分。</p>
+            <p>2、积分兑换：满200积分可来店里兑换任何水饺一份（注：积分会在个人积分中扣除）</p>
+            <p>3、注：目前个人积分机制只针对公寓村店执行。</p>
+        </div>
+    </div>
+    <div class="rules">
+        <div class="ruledetail">
+            <span>饺豆：</span>
+            <p>1、积攒方式：通过帮他人代取代水饺，现场联系工作人员通过微信扫码获得，带1份获得1个饺豆。</p>
+            <p>2、饺豆兑换：1饺豆兑换现金1元，100饺豆起兑。</p>
+        </div>
+    </div>
+</div>
+<p style="text-align: center;font-size: 2em;">积分兑换最终解释权归本店所有。</p>
+</body>
+</html>

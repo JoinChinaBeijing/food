@@ -1,0 +1,107 @@
+body{
+    background: #f2f2f2;
+    padding: 5px;
+}
+.orderlist{
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-bottom: 3rem;
+}
+.orderlist_top{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #F2F2F2;
+}
+.orderlist_bottom{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-bottom: 2px solid #F2F2F2;
+
+
+}
+.top_left{
+    height: 5rem;
+    width: 50%;
+    font-size: 2rem;
+    text-align: left;
+    line-height: 5rem;
+    padding-left: 1rem;
+}
+.top_right{
+    height: 5rem;
+    width: 50%;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 5rem;
+    padding-right: 1rem;
+}
+.bottombox{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    justify-content: space-around;
+}
+.bottomboxson{
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+.bottom_left{
+    width: 30%;
+    height: 100%;
+}
+.bottom_right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.foodcate{
+    width: 100%;
+    height: 7.5rem;
+    font-size: 2rem;
+    line-height: 7.5rem;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 1rem;
+}
+.foodamoune{
+    width: 100%;
+    height: 7.5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.amount{
+    width: 40%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 7.5rem;
+}
+.detailbox{
+    width: 60%;
+    height: 100%;
+    text-align: right;
+}
+.detailbox>a{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10%;
+    border: 1px solid #39b867;
+    background: #39b867;
+    text-decoration:none;
+    color: white;
+}
+#orderlistdtyle{
+    width: 100%;height: 5rem;font-size: 2rem;line-height: 5rem;text-align: center
+}

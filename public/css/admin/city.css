@@ -1,0 +1,37 @@
+#operatBox{
+    padding: 3px;
+    background: #F3F3F3;
+    border-top: 1px solid #95B8E7;
+    border-left: 1px solid #95B8E7;
+    border-right: 1px solid #95B8E7;
+}
+#win{
+    width:600px;
+    min-width:200px
+}
+
+#win table {
+    width: 100%;
+    border: 1px solid lightblue;
+    text-align: center;
+}
+
+#win  table td {
+    width: 25%;
+    border: 1px solid lightblue;
+    font-size: 12px;
+}
+.nowrite {
+    color: orangered;
+}
+.myinput{
+    border: none;
+    height: 24px;
+}
+select{
+    width: 12%;
+}
+
+.datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber{
+    font-size: 10px;
+}

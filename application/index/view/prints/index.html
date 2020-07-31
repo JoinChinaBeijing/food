@@ -1,0 +1,285 @@
+<!-- 控件跨浏览器调用类库-->  
+<script language="javascript" src="__VENDOR__/js/admin/LodopFuncs.js"></script>
+<!-- 调用LODOP控件代码-->  
+<object id="LODOP_OB" classid="clsid:2105C259-1E0C-4534-8141-A753534CB4CA" width=0 height=0>  
+    <embed id="LODOP_EM" type="application/x-print-lodop" width=0 height=0 pluginspage="install_lodop.exe"></embed>  
+</object>
+<div style="text-align: center;">{$date} 
+    <span style="color: red;margin-left: 10px;">未打印数量：</span> 
+    <span id="unPrintNum">0</span>
+</div>
+<div class="box" style="display: none;">
+    <h2>有一条订单</h2>
+    <p>姓名： <span style="color: red;" class="name"></span></p>
+    <p>电话： <span style="color: red;" class="phone"></span></p>
+</div>
+<div class="nobox" style="display: none;"> 暂时没有订单</div>
+<div class="print" style="display: block;"> </div>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script>
+    $(function(){
+        /*转为对象*/
+        // var order = ;
+        // console.log(order);
+
+        // // 打印预览
+        // function printPreview(){
+        //     //创建小票打印页  
+        //     CreatePrintPage(order);
+        //     //打印预览  
+        //     LODOP.PREVIEW();
+        // }
+
+        function printOrder() {
+            var url="{:url('prints/prints')}";
+            var time = setInterval(function()
+            {
+                $.getJSON(url,function(json){
+                    if (json)
+                    {
+                        $('.box').css('display','block');
+                        $('.name').html(json.contacter);
+                        $('.phone').html(json.phone);
+                        $('#unPrintNum').html(json.unPrintNum);
+                        $('.no').css('display','none');
+
+                        // 主单据打印
+                        // 创建小票打印页  
+                        CreatePrintPage(json);
+                        // 选择打印机
+                        LODOP.SET_PRINTER_INDEX(-1)
+                        //开始打印  
+                        LODOP.PRINT();
+
+                        // 创建小票打印页  
+                        CreatePrintPage(json);
+                        // 选择打印机
+                        LODOP.SET_PRINTER_INDEX(-1)
+                        //开始打印  
+                        LODOP.PRINT();
+
+                        // 后厨打印
+                        // 等待后厨出现在打开
+                        // if (json.printSetting == 1)
+                        // {
+                        //     var printList = [];
+                        //     // 获取打印机驱动
+                        //     for(var i=0;i<json.detail.length;i++){
+                        //         if ($.inArray(json.detail[i].prints, printList) == -1)
+                        //         {
+                        //             printList.push(json.detail[i].prints);
+                        //         }
+                        //     }
+
+                        //     $.each(printList,function(index,value){
+                        //         CreateFoodsPrint(json, true, value);
+                        //         // 选择打印机
+                        //         LODOP.SET_PRINTER_INDEX(value);
+                        //         //开始打印  
+                        //         LODOP.PRINT();
+                        //     });
+                        // }
+                        // else
+                        // {
+                        //     CreateFoodsPrint(json);
+                        //     // 选择打印机
+                        //     LODOP.SET_PRINTER_INDEX(-1);
+                        //     //开始打印  
+                        //     LODOP.PRINT();
+                        // }
+
+                        $.post("{:url('prints/updatePrints')}",{id:json.id},function(result){
+                            $(".print").html(json.id+'修改订单打印状态成功');
+                        });
+                    }
+                    else
+                    {
+                        $('.nobox').css('display','block');
+                        $('.box').css('display','none');
+                        $('#unPrintNum').html(0);
+                    }
+                });
+            }, 5000);
+
+        };
+
+        function CreatePrintPage(json) {
+            //json 创建模拟服务器响应的订单信息对象
+            var hPos= 0,//小票上边距  
+            pageWidth=580,//小票宽度
+            rowHeight=15,//小票行距  
+            //获取控件对象  
+            LODOP=getLodop(document.getElementById('LODOP_OB'),document.getElementById('LODOP_EM'));
+            //初始化   
+            LODOP.PRINT_INIT("打印订单");
+            //添加小票标题文本  
+            LODOP.ADD_PRINT_TEXT(hPos,50,pageWidth,rowHeight,'六米小吃订单信息');
+            //上边距往下移  
+            hPos+=rowHeight;  
+            LODOP.SET_PRINT_STYLE("FontSize", 18);
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"姓名:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.contacter);
+            // 备注信息
+            hPos+=25;
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"备注:");
+            for (var i = 0; i < Math.ceil(json.remark.length/5); i++)
+            {
+                LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.remark.substring(i*5, i*5+5));
+                hPos+=25;
+            }
+            LODOP.SET_PRINT_STYLE("FontSize", 9);
+            hPos+=rowHeight;//电话换行
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"电话:");
+            LODOP.ADD_PRINT_TEXT(hPos,30,pageWidth,rowHeight,json.phone);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"下单时间:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.createtime);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"订单编号:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.orderid);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"销售门店:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,'六米小吃' + json.storeName);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_LINE(hPos,2, hPos, pageWidth,2, 1);  
+            hPos+=5;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"商品名称");  
+            LODOP.ADD_PRINT_TEXT(hPos,70,pageWidth,rowHeight,"单价");  
+            LODOP.ADD_PRINT_TEXT(hPos,110,pageWidth,rowHeight,"数量");  
+            LODOP.ADD_PRINT_TEXT(hPos,140,pageWidth,rowHeight,"小计");  
+            hPos+=rowHeight;  
+            //遍历json的商品数组  
+            for(var i=0;i<json.detail.length;i++){
+
+                if(json.detail[i].fname.length<4){
+                    LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,json.detail[i].fname);
+                }else {
+                    //商品名字过长,其他字段需要换行
+                    LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,json.detail[i].fname);
+                    hPos+=rowHeight;
+                }  
+                LODOP.ADD_PRINT_TEXT(hPos,70,pageWidth,rowHeight,json.detail[i].price);
+                LODOP.ADD_PRINT_TEXT(hPos,115,pageWidth,rowHeight,json.detail[i].num);
+                LODOP.ADD_PRINT_TEXT(hPos,140,pageWidth,rowHeight,json.detail[i].total);
+                hPos+=rowHeight;
+            }
+            hPos+=rowHeight;
+            // 包装费
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"包装费:");
+            LODOP.ADD_PRINT_TEXT(hPos,140,pageWidth,rowHeight,json.deyamount + '.00');
+            //商品遍历打印完毕,空一行  
+            hPos+=rowHeight;
+            //合计  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"合计:");
+            LODOP.ADD_PRINT_TEXT(hPos,130,pageWidth,rowHeight,"￥"+json.amount);
+            hPos+=rowHeight;
+            LODOP.ADD_PRINT_LINE(hPos,2, hPos, pageWidth,2, 2);
+            // hPos+=5;
+            // 备注信息
+            // LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"备注:");
+            // for (var i = 0; i < Math.ceil(json.remark.length/12); i++)
+            // {
+            //     LODOP.ADD_PRINT_TEXT(hPos,30,pageWidth,rowHeight,json.remark.substring(i*12, i*12+12));
+            //     hPos+=rowHeight;
+            // }
+
+            // 送货地址
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"送货地址:");
+            for (var i = 0; i < Math.ceil(json.address.length/10); i++)
+            {
+                LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.address.substring(i*10, i*10+10));
+                hPos+=rowHeight;
+            }
+
+            LODOP.ADD_PRINT_TEXT(hPos,2,pageWidth,rowHeight,(new Date()).toLocaleDateString()+" "+(new Date()).toLocaleTimeString())  
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,25,pageWidth,rowHeight,"谢谢惠顾,欢迎下次光临!");
+            hPos+=rowHeight;
+            hPos+=rowHeight;
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"---------------撕纸处");
+            //初始化打印页的规格  
+            LODOP.SET_PRINT_PAGESIZE(3,pageWidth,45,"订单信息");
+        };
+
+        function CreateFoodsPrint(json, printSetting = false, printCode = -1) {
+            //json 创建模拟服务器响应的订单信息对象
+            var hPos= 0,//小票上边距  
+            pageWidth=580,//小票宽度
+            rowHeight=15,//小票行距  
+            //获取控件对象  
+            LODOP=getLodop(document.getElementById('LODOP_OB'),document.getElementById('LODOP_EM'));
+            //初始化   
+            LODOP.PRINT_INIT("打印订单");
+
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"姓名:");
+            LODOP.ADD_PRINT_TEXT(hPos,30,pageWidth,rowHeight,json.contacter);
+            hPos+=rowHeight; //电话不换行
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"电话:");
+            LODOP.ADD_PRINT_TEXT(hPos,30,pageWidth,rowHeight,json.phone);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"下单时间:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.createtime);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"订单编号:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,json.orderid);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"销售门店:");
+            LODOP.ADD_PRINT_TEXT(hPos,60,pageWidth,rowHeight,'六米小吃' + json.storeName);
+            hPos+=rowHeight;  
+            LODOP.ADD_PRINT_LINE(hPos,2, hPos, pageWidth,2, 1);  
+            hPos+=5;  
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"商品名称");  
+            LODOP.ADD_PRINT_TEXT(hPos,70,pageWidth,rowHeight,"单价");  
+            LODOP.ADD_PRINT_TEXT(hPos,110,pageWidth,rowHeight,"数量");  
+            LODOP.ADD_PRINT_TEXT(hPos,140,pageWidth,rowHeight,"小计");  
+            hPos+=rowHeight;  
+            //遍历json的商品数组  
+            for(var i=0;i<json.detail.length;i++){
+
+                if (printSetting && json.detail[i].prints != printCode){
+                    continue;
+                }
+                if(json.detail[i].fname.length<4){
+                    LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,json.detail[i].fname);
+                }else {
+                    //商品名字过长,其他字段需要换行
+                    LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,json.detail[i].fname);
+                    hPos+=rowHeight;
+                }  
+                LODOP.ADD_PRINT_TEXT(hPos,70,pageWidth,rowHeight,json.detail[i].price);
+                LODOP.ADD_PRINT_TEXT(hPos,115,pageWidth,rowHeight,json.detail[i].num);
+                LODOP.ADD_PRINT_TEXT(hPos,140,pageWidth,rowHeight,json.detail[i].total);
+                hPos+=rowHeight;
+            }
+            hPos+=rowHeight;
+            // 备注信息
+            LODOP.ADD_PRINT_TEXT(hPos,1,pageWidth,rowHeight,"备注:");
+            for (var i = 0; i < Math.ceil(json.remark.length/12); i++)
+            {
+                LODOP.ADD_PRINT_TEXT(hPos,30,pageWidth,rowHeight,json.remark.substring(i*11, i*11+11));
+                hPos+=rowHeight;
+            }
+
+            //初始化打印页的规格  
+            LODOP.SET_PRINT_PAGESIZE(3,pageWidth,45,"订单信息");
+        };
+
+        if (needCLodop()) {
+            //如果是只运行C-Lodop,只需下边的代码，
+            //C-Lodop----begin----
+            window.On_CLodop_Opened=function(){
+                var LODOP; //声明为全局变量
+                printOrder();    //OpenPreview()是调用打印方法
+                window.On_CLodop_Opened=null;
+            };    
+            //C-Lodop----end----                
+          } else {
+            window.onload = function(){var LODOP; printOrder();};
+          }
+    });
+</script>
+
+
+
+
+

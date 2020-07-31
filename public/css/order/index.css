@@ -1,0 +1,432 @@
+*{margin: 0;padding: 0;font-size: 3vw;}
+body{
+    background: #F2F2F2;
+}
+#addressBox{width: 100%;
+    background: #F2F2F2;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+}
+.addresstop{
+    width: 100%; height: 23vw;
+    display: flex;
+    flex-direction: column;
+}
+#orderBox{
+    width: 100%;
+    height: 22rem;
+    padding: 2%;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    background: white;
+    overflow: scroll;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+.moreaddress{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    background:white;
+    border-bottom: 1px solid #ddd;
+}
+.mynewaddress{
+    width: 70%;height:100%;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;line-height: 3rem;
+    display: flex;justify-content: space-around;
+}
+.newaddress{
+    overflow:hidden;text-overflow:ellipsis;white-space: nowrap;font-size: 1rem;
+}
+.check{
+    display:inline-block;width: 40%;height:100%;font-size: 1rem;color: #F2F2F2;text-align: center;line-height: 5rem;
+}
+.moreaddressBox{
+    width: 100%;height: 19rem;display: none;
+}
+.moreaddressBox>ul{
+    overflow: scroll;height: 16rem;
+}
+.addresscheck{
+    width: 15%;height: 100%;line-height: 10vh;text-align: center;
+}
+.checkpic{
+    width: 5vw;height: 5vw;
+}
+.mycheckaddress{
+    width: 90%;height: 100%;
+}
+.test{
+    transform:rotate(180deg);
+    transition: 0.5s;
+}
+.testback{
+    transform:rotate(360deg);
+}
+.fontmay{
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.newAddressForm ul li{
+    width:100%;
+    height: 23%;
+    line-height: 5rem;
+}
+
+.newAddressFormbreakfast ul li{
+    width:100%;
+    height: 23%;
+    line-height: 5rem;
+}
+select{
+    outline: none;
+    width: 60%;
+    margin-left: 10%;
+    height: 4vh;
+    border: none;
+}
+option{
+    font-size: 1vw;
+}
+.formFontSize{
+    display: inline-block;
+    font-size: 3vw;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.addinput{
+    width: 60%;
+    margin-left: 10%;
+    height: 6vh;
+    border: none;
+    outline: none;
+}
+.addinput_status{
+    margin-left: 10%;
+    display: inline-block;
+}
+.addinput_status>input{
+    width: 3vw;height: 3vw;
+}
+#adr{
+    display: inline-block;width: 100%;height: 100%;
+}
+
+#adrbox{
+    width: 95%;height: 50%;padding-left: 1rem;
+    display: flex;justify-content: space-between;;
+}
+
+#adrzwbox{
+    display: inline-block;width: 100%;height: 50%;
+}
+.adrbox{
+    width: 100%;height: 50%;
+}
+.adrboxtop{
+    width: 30%;height: 100%;float: left;text-align: left;line-height: 2vh;
+    padding-left: 0.3rem;
+}
+.iconfont{
+    margin-left: 2vw;display: inline-block;
+}
+.icon{
+    width: 5vw;height:5vw;
+}
+.iconbig{
+    width: 6vw;height: 6vw;
+}
+.phonenum{
+    width: 60%;height: 100%;float: left;text-align: center;line-height: 2vh;
+    overflow: hidden;
+}
+.adrdetailbox{
+    width: 100%;height: 100%;float: left;line-height: 2vh;overflow: hidden;
+}
+.adrimg{
+    width: 100%;
+}
+.addborder{
+    display: flex;
+    justify-content: space-around;
+}
+.addborder>div{
+    width: 46%;
+    height: 100%;
+    line-height: 5vh;
+}
+
+#zhezhao{
+    width: 100%;height: 100vh;background: #000000;opacity: 0.5;position: absolute;z-index: 2;top:0;left: 0;display: none;
+}
+#addbox{
+    width: 80%;height: 30rem;background: white;position: absolute;top: 5rem;z-index: 3;left: 10%;display: none;
+}
+#remarkinsertbox{
+    width: 80%;height: 10rem;background: white;position: absolute;top: 20rem;z-index: 3;left: 10%;display: none;
+}
+.newAddressForm{
+    width: 100%;height: 27rem;
+}
+
+.newAddressFormbreakfast{
+    width: 100%;height: 30rem;
+}
+
+.newAddressFormbreakfast ul{
+    width: 80%;height: 80%;margin-left: 10%;
+}
+.newAddressForm ul{
+    width: 80%;height: 80%;margin-left: 10%;
+}
+
+.newAddressForm2{
+    width: 100%;height: 7rem;
+}
+#dialog{
+    width: 100%;height: 3rem;background: #39B867;display: flex;justify-content: space-between;
+}
+#dialogbox{
+    width: 100%;height: 3rem;background: #39B867;display: flex;justify-content: space-between;
+}
+
+#dialog_cancel,.dialog_cancel{
+    width: 49%;height: 3rem;text-align: center;line-height: 3rem;color: white;font-weight: 700;border-right: 2px solid #F2F2F2;
+}
+#dialog_confirm,.dialog_confirm{
+    width: 49%;height: 3rem;text-align: center;line-height: 3rem;color: white;font-weight: 700;
+}
+#deliveryBox{
+    width: 100%;
+    background: white;
+    height: 10vh;
+}
+#deliverypricebox{
+    width: 100%;
+    background: white;
+    height: 5vh;
+}
+.delivery{
+    width: 100%;
+    height: 5vh;
+    border-top: 1px solid #ddd;
+}
+.deliverytop{
+    width: 90%;height: 100%;
+    margin-left: 5%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.deliverytop>div{
+    width: 50%;
+    height: 100%;
+    line-height: 5vh;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.deliverytopright{
+    text-align: right;
+}
+#orderboxSon{
+    width: 100%;
+}
+.foodtotelBox{
+    width: 100%;height: 5vh;background: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+
+}
+.foodtotel{
+    width: 50%;height: 100%;
+    line-height: 5vh;
+    padding-left: 2%;
+    padding-right: 4%;
+    font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.foodtotelLeft{
+    text-align: left;
+}
+.foodtotelRight{
+    text-align: right;
+}
+.foodDetailSon{
+    width: 95%;height: 6rem;margin-left: 5%;background: white;
+}
+.foodDetailBox{
+    width: 100%;min-height:5vh;
+}
+.foodpicbox,.fooddes,.foodnum{
+    display: inline-block;
+    float: left;
+}
+.foodpicbox{
+    width: 23%;
+    height: 100%;
+}
+.fooddes{
+    width: 75%;
+    height: 100%;
+    padding-left: 1rem;
+}
+.fooddes>p{
+    display: inline-block;
+    padding-left: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.foodname{
+    width: 100%;
+    height: 100%;
+    font-size: 4vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.fooddescdetail{
+    width: 100%;
+    height: 50%;
+    font-size: 3vw;
+    line-height: inherit;
+}
+.unit{
+    width: 100%;
+    height: 25%;
+    font-size: 3vw;
+}
+.foodnum{
+    width: 20%;
+}
+.changenum{
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+.stock{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top:35%;
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.changenum .decrease,.increase,.text_box{
+    width: 20%;
+    height: 100%;
+    display: block;
+}
+.foodlistbox{
+    border-bottom: 1px solid #ddd;padding-top: 1vh;padding-bottom: 1vh;
+}
+.xiangxia{
+    margin-left: 3vw;width: 5vw;height: 5vw;
+}
+.footerLeft{
+    width: 70%;height: 100%;display: inline-block;
+    padding-left: 5%;
+    background: white;
+}
+.footerLeft span{
+    font-size: 2rem;
+    line-height: 7vh;
+    color: #F89D11;
+}
+.footerRight{
+    color: white;;font-weight: 700;
+    width: 30%;height: 100%;background: #39B867;display: inline-block;
+    line-height: 7vh;
+    text-align: center;
+
+}
+.footerRight span{
+    font-size: 2rem;
+}
+#remarkBox{
+    width: 99%;height: 10vh;
+    margin-top: 1vh;
+}
+textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.detail{
+    padding: 0;
+}
+#moreadropen{
+    width: 10%;height: 100%;text-align: center;line-height: 11vw;display: inline-block;
+}
+.addiocon{
+    width: 4vw;height: 4vw;
+    margin-bottom: 0.5vh;
+}
+.gengduo_1{
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg); 	/* IE 9 */
+    -moz-transform:rotate(180deg); 	/* Firefox */
+    -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+    -o-transform:rotate(180deg);
+}
+.tastebox{
+    display: inline-block;
+    width: 12%;height: 85%;
+    border: 1px solid #F2F2F2;
+    text-align: center;
+    margin-left: 3px;
+    font-size: 1rem;
+    padding: 1%;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.bordercolor{
+    background: #39b867;
+    color: white;
+}
+.typebox{
+    width: 100%;
+    height: 3rem;
+    background: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+}
+.typebox>div{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+.ziqubox{
+    width: 100%;
+    height: 8rem;
+    background: white;
+    padding-left: 2rem;
+    box-sizing: border-box;
+}
+.typecolor{
+    background: #39b867;
+}
+
+#decreasestyle,#increasestyle,#numcheckstyle{
+    line-height: 1.5rem;display: block;width: 5vw;height: 5vw;
+}
+.breakfastOrder{
+    width: 100%;
+    height: 30rem;
+    padding: 2%;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    background: white;
+    overflow: scroll;
+}

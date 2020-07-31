@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>六米水饺</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="../../easyui/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/home/amazeui.min.js" type="text/javascript"></script>
+    <link href="../../css/home/amazeui.min.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/home/style.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/home/index.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<header data-am-widget="header" class="am-header am-header-default sq-head ">
+    <input type="hidden" id="lowspend" name="lowspend" value="{$lowspend}">
+    <form action="{:url('home/index/index')}" method="post" id="storeForm">
+        <label for="select" class="select" style="display: block;width: 40%;float: left;background: #ffffff;">
+            <select name="store" id="select" style="background:none;">
+                {volist name="stores" id="vo"}
+                <option value="{$vo.id}">{$vo.name}</option>
+                {/volist}
+            </select>
+        </label>
+    </form>
+    <div id="ingralBox">当前<a href="http://www.sixmeter.cn/home/Personal/index">积分</a>：{$integral}，<span><a id="myorderfont" href="{:url('home/order/myorder')}"><u>我的</u></a></span></div>
+
+</header>
+<div class="list-left-my">
+    <form id="orderform" action="{:url('home/order/index')}" method="post">
+        <input type="hidden" id="chosenum" name="chosenum">
+        <input type="hidden" name="store" value="{$store}">
+        <div class="selfContent" id="tab">
+            {volist name="data.categories" id="vo"}
+            <li>
+                <a >{$vo.name}</a>
+                <ul class="list-pro" style="height: {$vo.viewsize}" >
+                    {volist name="vo['foods']" id="voo"}
+                    <li>
+                        <div>
+                            <div class="selfPic">
+                                {eq name="$voo.status" value="0"}
+                                <a><img  src="../../images/sytp.jpg" class="" /></a>
+                                {else/}
+                                <a><img  src="../../uploads/{$voo.pic}" class="" /></a>
+                                {/eq}
+                            </div>
+                            <div class="self-right-right">
+                                <div>
+                                    <p class="foodname" >{$voo.name}</p>
+                                    {eq name="$voo.disstatus" value="1"}
+                                    <p class="myprice">￥<span class="price" >{$voo.disprice}</span>&nbsp;<span class="" style="text-decoration: line-through;color: #cccccc;">({$voo.price})</span><span>/{$voo.unit}</span></p>
+                                    {else/}
+                                    <p class="myprice">￥<span class="price">{$voo.price}</span><span>/{$voo.unit}</span></p>
+                                    {/eq}
+                                </div>
+                                <div class="listcart">
+                                    <input type="hidden" class="iscid" value="{$voo.cid}">
+                                    <div class="dstock ">
+                                        <a class="decrease_self">-</a>
+                                        <input  readonly="readonly" class="textbox" name="{$voo.sid}-{$voo.cid}-{$voo.id}" type="text" value="0">
+                                        {eq name="$voo.status" value="0"}
+                                        {else/}
+                                        <a class="increase_self">+</a>
+                                        <input type="hidden" value="" class="siblings">
+                                        {/eq}
+                                    </div>
+                                    {eq name="$voo.disstatus" value="1"}
+                                    <input type="hidden" class="pprice" value="{$voo.disprice}">
+                                    {else/}
+                                    <input type="hidden" class="pprice" value="{$voo.price}">
+                                    {/eq}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {/volist}
+                </ul >
+            </li>
+            {/volist}
+        </div>
+    </form>
+</div>
+
+<!--底部-->
+<div id="footerBoxbox">
+    <div id="footerBox">
+        <a href="" class="footer-left">合计：<i id="num">0</i><i>元</i></a>
+        {eq name="storedata.status" value="0"}
+        <a  onclick="closeStoretips()" class="footer-right">选好了</a>
+        {else/}
+        <a  onclick="addorder()" class="footer-right">选好了</a>
+        {/eq}
+    </div>
+    <div style="height: 2rem;width: 100%;background: #7d7d7d;margin-top: 1rem;margin-left: -0.5rem;">
+        <div style="width: 100%;"><p style="color: white;text-align: center;line-height:20px;font-size: 12px;">©2020 SM All Rights Reserved<a href="http://www.beian.miit.gov.cn" style="color: white;">冀ICP备19022506号-1</a></p></div>
+    </div>
+</div>
+
+{eq name="storedata.status" value="0"}
+<div id="zhezhao"></div>
+<div id="closetipsBox">
+    <div id="closetipsBox_top">
+        <p>尊敬的客户：</p>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{$storedata.statusdesc}</span>
+    </div>
+    <div id="closeknow">我知道了</div>
+</div>
+{/eq}
+
+{if condition="$Think.session.times" eq 1}
+{present name="announcement"}
+<div id="zhezhaoa"></div>
+<div id="closetipsBoxa">
+    <div id="closetipsBox_topa">
+        <p>尊敬的客户：</p>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;{$announcement.content}</span>
+    </div>
+    <div id="closeknowa">我知道了</div>
+</div>
+{/present}
+{/if}
+</body>
+<script src="../../js/home/index.js" type="text/javascript"></script>
+<script>
+    function addorder() {
+        var num = $(".textbox:visible").length;
+        var orderamount = $("#num").html();
+        var lowspend = $("#lowspend").val();
+        if(num == 0 ){
+            alert("没有选择任何商品哦");
+            return false;
+        }
+        if(parseFloat(orderamount) < parseFloat(lowspend)){
+            alert("亲，最低消费"+lowspend+"元哦");
+            return false;
+        }
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "{:url('home/Index/checkChose')}" ,
+            data: $("#orderform").serialize(),
+            success: function (result) {
+                if (result.code == 200) {
+                    $("#orderform").submit();
+                }else {
+                    alert(result.msg);
+                    return false;
+                }
+            }
+        });
+    }
+</script>
+</html>

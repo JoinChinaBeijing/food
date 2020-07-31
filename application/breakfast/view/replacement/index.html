@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="小吃，微信商城，外卖" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <meta name = "format-detection" content = "telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="__VENDOR__/css/admin/bootstrap.min.css">
+    <script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+    <title>代餐优惠</title>
+    <style type="text/css">
+        .inputtext{
+            width: 80%;
+            margin: 4rem auto;
+            text-align: center;
+        }
+        .textstyle{
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="inputtext">
+        <form id="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1" class="textstyle">输入个数</label>
+                <input type="number" id="num" name="number" class="input-lg" placeholder="输入代餐个数">
+            </div>
+            <a onclick="save()" href="javascript:void(0)" class="btn btn-success" onclick="save()">确定</a>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+    function save() {
+
+        var num = $('#num').val();
+        var url = "{:url('home/replacement/index')}";
+        var flag=confirm('确定输入数字是：'+num);
+        if(flag){
+            $.post(url,{integral:num},function(data){
+                if (JSON.parse(data).code == 200){
+                    window.location.href = JSON.parse(data).url;
+                }
+                else
+                {
+                    alert(JSON.parse(data).message);
+                }
+            });
+        }
+    }
+</script>
+</html>

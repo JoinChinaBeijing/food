@@ -1,0 +1,1930 @@
+---------------------------------------------------------------
+[ 2019-08-05T12:05:45+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081926s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.050954s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.050393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.050417s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.049249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050253s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.049337s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049535s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.049963s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.049583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.049389s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.049606s ]
+[ sql ] [ SQL ] SELECT * FROM `food` WHERE  `cid` = 1  AND `sid` = 1  AND `status` = 1 ORDER BY `sort` DESC [ RunTime:0.050976s ]
+---------------------------------------------------------------
+[ 2019-08-05T12:05:47+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083422s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.055755s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.054479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.054570s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.054906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.053636s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.053323s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053406s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.053786s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.053122s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052966s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.053339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.053825s ]
+[ sql ] [ SQL ] SELECT * FROM `food` WHERE  `cid` = 1  AND `sid` = 1  AND `status` = 1 ORDER BY `sort` DESC [ RunTime:0.055139s ]
+---------------------------------------------------------------
+[ 2019-08-05T12:35:52+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086033s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053258s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.051412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051600s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.050689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052103s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.051837s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050100s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052065s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051776s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.052315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.050817s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050518s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `cid` = 1  AND `s`.`sid` = 1  AND `status` = 1 ORDER BY `sort` DESC [ RunTime:0.051689s ]
+---------------------------------------------------------------
+[ 2019-08-05T12:40:40+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.080489s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052249s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.051652s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051717s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050781s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.050870s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050313s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.051696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.050681s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.050946s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052017s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050020s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.051930s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `cid` = 1  AND `s`.`sid` = 1  AND `status` = 1 ORDER BY `sort` DESC [ RunTime:0.050958s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `announcement` [ RunTime:0.051765s ]
+[ sql ] [ SQL ] SELECT * FROM `announcement` WHERE  `status` = 1  AND `sid` = 1 LIMIT 1 [ RunTime:0.050321s ]
+---------------------------------------------------------------
+[ 2019-08-05T12:41:00+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089174s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059662s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.066850s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.057215s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.057159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059144s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.057600s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056595s ]
+---------------------------------------------------------------
+[ 2019-08-05T12:42:30+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065608s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.042438s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.042148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.040732s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.041077s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.041827s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.040846s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.042458s ]
+---------------------------------------------------------------
+[ 2019-08-05T13:44:40+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094276s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.062527s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.061437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.060397s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.059538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.060103s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.060232s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060449s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.060172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.060355s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.061452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.064661s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059973s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `cid` = 1  AND `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.060098s ]
+---------------------------------------------------------------
+[ 2019-08-05T13:49:39+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.541389s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.055576s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.169809s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.052938s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.267260s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052706s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.273596s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.302545s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.281094s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.327519s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.259454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.052423s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `cid` = 1  AND `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.278157s ]
+---------------------------------------------------------------
+[ 2019-08-05T20:33:49+08:00 ] 127.0.0.1 GET www.food.com/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088627s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.058713s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.054148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.052713s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052614s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.053042s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052608s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.053116s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.053476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052552s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052286s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.053175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.052869s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.052971s ]
+[ error ] [8]未定义数组索引: foods
+---------------------------------------------------------------
+[ 2019-08-05T20:34:32+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.258394s] [吞吐率：0.79req/s] [内存消耗：2,566.74kb] [文件加载：62]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089214s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.063990s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.059748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.058639s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.058825s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.058979s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.058183s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059345s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.059053s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.058210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.057907s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.058105s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.057553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.058091s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.059072s ]
+[ error ] [8]未定义数组索引: foods[C:\phpStudy\PHPTutorial\WWW\tp\application\home\model\IndexModel.php:35]
+---------------------------------------------------------------
+[ 2019-08-05T20:35:42+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.113999s] [吞吐率：0.90req/s] [内存消耗：2,566.73kb] [文件加载：62]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.078336s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.051854s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.055299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.051103s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.050462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050713s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.050749s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050695s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.051269s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.049805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.051033s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050383s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.050334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.050812s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.050689s ]
+[ error ] [8]未定义数组索引: foods[C:\phpStudy\PHPTutorial\WWW\tp\application\home\model\IndexModel.php:35]
+---------------------------------------------------------------
+[ 2019-08-05T20:35:46+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.189381s] [吞吐率：0.84req/s] [内存消耗：2,566.73kb] [文件加载：62]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.087756s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.058078s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.057125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.056804s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.056435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.056931s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.056430s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057866s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.056734s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.056365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.056653s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056231s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055949s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.057057s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.057111s ]
+[ error ] [8]未定义数组索引: foods[C:\phpStudy\PHPTutorial\WWW\tp\application\home\model\IndexModel.php:35]
+---------------------------------------------------------------
+[ 2019-08-05T20:35:58+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.206170s] [吞吐率：0.83req/s] [内存消耗：2,507.24kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089227s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.060471s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.060949s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.059887s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.059511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.059835s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.059461s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059111s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.061438s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.059882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.059050s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.059192s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.058920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.059575s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.059258s ]
+---------------------------------------------------------------
+[ 2019-08-05T20:37:57+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.972926s] [吞吐率：1.03req/s] [内存消耗：2,507.09kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073248s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.048715s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.047644s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.047551s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.045414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.047495s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.045522s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045555s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.045864s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.044943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.045528s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045314s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.046199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.045337s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.046041s ]
+---------------------------------------------------------------
+[ 2019-08-05T20:38:20+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.727381s] [吞吐率：1.37req/s] [内存消耗：2,629.95kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.088197s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.059176s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.059038s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.058397s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.058237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.058352s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.058150s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.057960s ]
+---------------------------------------------------------------
+[ 2019-08-05T20:38:20+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.155346s] [吞吐率：6.44req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T20:38:20+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4.jpg
+[运行时间：0.180147s] [吞吐率：5.55req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => '840c90cfe7275236a05c4f392cf9a3e4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:01:35+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.768978s] [吞吐率：1.30req/s] [内存消耗：2,630.45kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.097692s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.066269s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.067351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.064947s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.066579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.064949s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.064561s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064851s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:01:35+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.152071s] [吞吐率：6.58req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:01:36+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4.jpg
+[运行时间：0.129368s] [吞吐率：7.73req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => '840c90cfe7275236a05c4f392cf9a3e4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:01:44+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[运行时间：0.354000s] [吞吐率：2.82req/s] [内存消耗：2,252.58kb] [文件加载：56]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'checkchose',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.food.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.food.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/checkchose_html' => '',
+  'store' => '1',
+  '1-1-2' => '14',
+  '1-1-1' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->checkChose[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074014s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.049893s ]
+[ sql ] [ SQL ] SELECT * FROM `food` WHERE  `cid` = 1  AND `ischose` = 1 LIMIT 1 [ RunTime:0.049493s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:08:52+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.657260s] [吞吐率：1.52req/s] [内存消耗：2,630.59kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.076626s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.050307s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.049904s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.049612s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.049009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.049454s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.050146s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049494s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:08:52+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.126474s] [吞吐率：7.91req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:08:52+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4.jpg
+[运行时间：0.100774s] [吞吐率：9.92req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => '840c90cfe7275236a05c4f392cf9a3e4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:09:20+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.759653s] [吞吐率：1.32req/s] [内存消耗：2,490.98kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.098140s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.065877s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.065601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.065161s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.064905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.064913s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.064798s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064566s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:11:18+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.720484s] [吞吐率：1.39req/s] [内存消耗：2,491.20kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082001s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053650s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.054219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053350s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052939s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052664s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052380s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:11:36+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.714991s] [吞吐率：1.40req/s] [内存消耗：2,484.10kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.079360s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.052876s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.052948s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.052357s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.051574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.051960s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.051649s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052370s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052050s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:12:26+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.984996s] [吞吐率：1.02req/s] [内存消耗：2,490.73kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.082597s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.053986s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.054490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.053056s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.053346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.052587s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.052365s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052225s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.052612s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.052042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.052253s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.052090s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.051999s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:14:29+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.340161s] [吞吐率：0.75req/s] [内存消耗：2,507.09kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101308s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.073900s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.066435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.065343s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.066800s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.065655s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.064860s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067996s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.065376s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.065252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.065067s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065602s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.064851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.065694s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.066393s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:14:43+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.023151s] [吞吐率：0.98req/s] [内存消耗：2,507.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073356s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.048750s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.048680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.047848s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.047825s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050795s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.048311s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049070s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.049560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.048368s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.047457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.047945s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.047492s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.047512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.047322s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.050847s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:15:42+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.138052s] [吞吐率：0.88req/s] [内存消耗：2,508.16kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086228s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.057026s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.056496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.055888s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.055023s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.055428s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.055029s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.055629s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.056129s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.059591s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.056547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.055677s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.055223s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.055726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055345s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.055801s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:16:11+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.877954s] [吞吐率：1.14req/s] [内存消耗：2,511.79kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065914s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.045602s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.043799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.044176s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.042707s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.043094s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.042778s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.043166s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.043317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.043563s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.042465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.043182s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.042332s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.042403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.043054s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.045328s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:16:27+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.276775s] [吞吐率：0.78req/s] [内存消耗：2,510.48kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.099855s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.067654s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.066557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.066199s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.065719s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.067100s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.065578s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067846s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.065789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.065811s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.065572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.065600s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.072138s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.065397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.066041s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.066337s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:16:42+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.887595s] [吞吐率：1.13req/s] [内存消耗：2,508.09kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.065439s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.043584s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.044430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.043084s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.043381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.043444s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.042929s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.042948s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.042910s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.042562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.042682s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.042492s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.042408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.042679s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.043293s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:34:39+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.217427s] [吞吐率：0.82req/s] [内存消耗：2,491.37kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101011s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.067728s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.067656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.066887s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.066724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.066758s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.066703s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067096s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.067082s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.067043s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.066448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.067308s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.066530s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.066574s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:37:27+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.049174s] [吞吐率：0.95req/s] [内存消耗：2,510.57kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.068489s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.045839s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.046119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.046266s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.056815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.045142s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.044602s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.045167s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.046349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.045335s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.044444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.044745s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.044742s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.046210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.046383s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.046136s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:41:59+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.812377s] [吞吐率：1.23req/s] [内存消耗：2,630.00kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.094620s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.062712s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.064936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.077131s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.061443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.061356s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.060884s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.061405s ]
+---------------------------------------------------------------
+[ 2019-08-05T21:42:00+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.164038s] [吞吐率：6.10req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T21:42:00+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4.jpg
+[运行时间：0.104529s] [吞吐率：9.57req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => '840c90cfe7275236a05c4f392cf9a3e4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:28:43+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：0.660081s] [吞吐率：1.51req/s] [内存消耗：2,630.75kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.074645s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.050663s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.049415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.050806s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.049594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.050088s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.048996s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050276s ]
+---------------------------------------------------------------
+[ 2019-08-05T22:28:44+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.181226s] [吞吐率：5.52req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:28:44+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4.jpg
+[运行时间：0.147448s] [吞吐率：6.78req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => '840c90cfe7275236a05c4f392cf9a3e4.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/840c90cfe7275236a05c4f392cf9a3e4_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:28:56+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.149864s] [吞吐率：0.87req/s] [内存消耗：2,491.03kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.096229s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.065086s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.064715s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.064592s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.063453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.064006s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.063612s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.064156s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.063919s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.064118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.063956s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.063370s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.064289s ]
+---------------------------------------------------------------
+[ 2019-08-05T22:41:56+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.098139s] [吞吐率：0.91req/s] [内存消耗：2,651.24kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.083614s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.056877s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.058372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.055422s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.054774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.056006s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.054598s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054633s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054772s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.055560s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.054327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.054969s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.054250s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.054579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.055214s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.055031s ]
+---------------------------------------------------------------
+[ 2019-08-05T22:41:56+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.133726s] [吞吐率：7.48req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:41:57+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/ec85768b06e62d5e27b1dc9e4c8d5b68.jpg
+[运行时间：0.100466s] [吞吐率：9.95req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => 'ec85768b06e62d5e27b1dc9e4c8d5b68.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/ec85768b06e62d5e27b1dc9e4c8d5b68_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:53:17+08:00 ] 127.0.0.1 GET www.food.com/
+[运行时间：1.269011s] [吞吐率：0.79req/s] [内存消耗：2,651.52kb] [文件加载：61]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\tp\public/../application/home\view\index\index.html [ array (
+  0 => 'stores',
+  1 => 'storedata',
+  2 => 'store',
+  3 => 'data',
+  4 => 'integral',
+  5 => 'lowspend',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.101070s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.065269s ]
+[ sql ] [ SQL ] SELECT * FROM `store` [ RunTime:0.063271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `integral` [ RunTime:0.062159s ]
+[ sql ] [ SQL ] SELECT * FROM `integral` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.062086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_store` [ RunTime:0.062953s ]
+[ sql ] [ SQL ] SELECT * FROM `user_store` WHERE  `uid` = 3 LIMIT 1 [ RunTime:0.061789s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062763s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store_category` [ RunTime:0.062287s ]
+[ sql ] [ SQL ] SELECT * FROM `store_category` WHERE  `sid` = 1 LIMIT 1 [ RunTime:0.061271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.061816s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.062838s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.062988s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.064009s ]
+[ sql ] [ SQL ] SELECT * FROM `food` `f` LEFT JOIN `store_food` `s` ON `f`.`id`=`s`.`fid` WHERE  `s`.`sid` = 1  AND `f`.`status` = 1  AND `s`.`status` = 1 ORDER BY `sort` DESC [ RunTime:0.062075s ]
+---------------------------------------------------------------
+[ 2019-08-05T22:53:17+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190803/e207a6796f452053efc50bf4317d97be.jpg
+[运行时间：0.161600s] [吞吐率：6.19req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190803',
+    2 => 'e207a6796f452053efc50bf4317d97be.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190803/e207a6796f452053efc50bf4317d97be_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:53:18+08:00 ] 127.0.0.1 GET www.food.com/uploads/20190805/ec85768b06e62d5e27b1dc9e4c8d5b68.jpg
+[运行时间：0.081346s] [吞吐率：12.29req/s] [内存消耗：1,244.27kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'uploads',
+    1 => '20190805',
+    2 => 'ec85768b06e62d5e27b1dc9e4c8d5b68.jpg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.food.com/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/uploads/20190805/ec85768b06e62d5e27b1dc9e4c8d5b68_jpg' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T22:53:30+08:00 ] 127.0.0.1 POST www.food.com/home/index/checkchose.html
+[运行时间：0.424430s] [吞吐率：2.36req/s] [内存消耗：2,252.29kb] [文件加载：56]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\tp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'checkchose',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6bppb0pbpqrlfl4jv25md90qo7',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.food.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.food.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'www.food.com',
+)
+[ info ] [ PARAM ] array (
+  '/home/index/checkchose_html' => '',
+  'store' => '1',
+  '1-1-2' => '10',
+  '1-1-1' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ CACHE ] INIT redis
+[ info ] [ RUN ] app\home\controller\Index->checkChose[ C:\phpStudy\PHPTutorial\WWW\tp\application\home\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.089667s ] mysql:host=39.104.168.146;port=3306;dbname=food;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `food` [ RunTime:0.062043s ]
+[ sql ] [ SQL ] SELECT * FROM `food` WHERE  `cid` = 1  AND `ischose` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.060389s ]

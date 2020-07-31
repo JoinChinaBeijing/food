@@ -1,0 +1,80 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    <title>确认支付</title>
+    <script type="text/javascript">
+	//调用微信JS api 支付
+	function jsApiCall()
+	{
+		WeixinJSBridge.invoke(
+			'getBrandWCPayRequest',
+			<?php echo $jsApiParameters; ?>,
+			function(res){
+				if (res.err_msg == 'get_brand_wcpay_request:ok')
+				{
+					window.location.href = "{$callbackUrl}";
+				}
+				else
+				{
+					// WeixinJSBridge.log(res.err_msg);
+					// alert(res.err_code+res.err_desc+res.err_msg);
+					if (res.err_msg == 'get_brand_wcpay_request:cancel')
+					{
+						alert('支付取消');
+					}
+					else if (res.err_msg =='get_brand_wcpay_request:fail')
+					{
+						alert('支付失败');
+					}
+					else
+					{
+						alert('未知错误');
+					}
+				}
+				
+			}
+		);
+	}
+
+	function callpay()
+	{
+		if (typeof WeixinJSBridge == "undefined"){
+		    if( document.addEventListener ){
+		        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+		    }else if (document.attachEvent){
+		        document.attachEvent('WeixinJSBridgeReady', jsApiCall); 
+		        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+		    }
+		}else{
+		    jsApiCall();
+		}
+	}
+	</script>
+</head>
+<body style="background: #eeeeee;">
+
+    <div style="text-align: center;">{$amount}元</div>
+    <div style="text-align: center; font-size: 3rem;margin-top: .5rem;">￥{$amount}元</div>
+    <div style="background: #ffffff;width: 100%;margin-top: 1.5rem;overflow: hidden;">
+    	<div style="padding: .5rem 1rem .5rem 1rem; display: flex;flex-direction:row;justify-content: space-between;">
+    		<span style="color: #999999;">收款方</span><span>六米小吃店</span>
+    	</div>
+    	<div style="padding: 0 1rem .5rem 1rem; display: flex;flex-direction:row;justify-content: space-between;">
+    		<span style="color: #999999;">订单号</span><span>{$orderid}</span>
+    	</div>
+    	<div style="padding: 0 1rem .5rem 1rem; display: flex;flex-direction:row;justify-content: space-between;">
+    		<span style="color: #999999;">支付金额</span><span>{$amount}元</span>
+    	</div>
+    </div>
+    <br/><br/>
+	<div align="center">
+		<button style="width:100%; height:3rem; border-radius: 15px;background-color:#129611; border:0px #FE6714 solid; cursor: pointer;  color:white;  font-size:16px;" type="button" onclick="callpay()" >立即支付</button>
+	</div>
+</body>
+<script type="text/javascript">
+	document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {  
+        WeixinJSBridge.call('hideOptionMenu');  
+    });
+</script>
+</html>

@@ -1,0 +1,201 @@
+<link rel="stylesheet" type="text/css" href="__VENDOR__/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/wu.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/icon.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/city.css" />
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__VENDOR__/js/admin/mybase.js"></script>
+
+
+
+<table id="tt" class="easyui-datagrid" style="width:100%;height:650px"
+       url = "{:url('index/Order/getList')}"
+       title="订单列表" iconCls="icon-edit"
+       rownumbers="true" singleSelect="true"  pagination="true" data-options="pageSize:20" toolbar="#tb">
+    <thead>
+    <tr>
+        <th field="orderid" width="15%" align="center" >订单号</th>
+        <th field="amount" width="10%" align="center" >订单金额</th>
+        <th field="type" width="10%" align="center">方式</th>
+        <th field="deyamount" width="10%" align="center">运费</th>
+        <th field="remark" width="20%" align="center">备注</th>
+        <th field="status" width="10%" align="center">状态</th>
+        <th field="breakfast" width="10%" align="center">订单类型</th>
+        <th field="createtime" width="15%" align="center">创建时间</th>
+    </tr>
+    </thead>
+</table>
+<div id="tb" style="padding:5px;height: 50px;">
+    <span>开始时间:</span>
+    <input id="start" name="start" type="text" value="{$start}" class="easyui-datetimebox"  required="required">
+    <span>结束时间:</span>
+    <input id="end" name="end" type="text" value="{$end}" class="easyui-datetimebox" required="required">
+    <span>订单号:</span>
+    <input id="orderid" name="end" type="text" value="" class="easyui-textbox">
+    <a href="#" class="easyui-linkbutton" plain="true" onclick="doSearch()">搜索</a>
+    <a href="#" class="easyui-linkbutton" plain="true" onclick="refund()">退款</a>
+</div>
+
+
+<div id="win" class="easyui-window" title="执行退款"
+     data-options="iconCls:'icon-save',modal:true,closed:true,draggable:true,resizable:true">
+    <form name="addform" id="addform" action="" method="post"
+          enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td> 订单号 :</td>
+                <td><input style="width: 80%" readonly class="easyui-textbox myinput" id="refundorderid"  ></td>
+
+            </tr>
+            <tr>
+                <td> 微信单号 :</td>
+                <td><input style="width: 80%" readonly class="easyui-textbox myinput" id="transid"  ></td>
+
+            </tr>
+            <tr>
+                <td> 支付金额:</td>
+                <td><input style="width: 80%" readonly class="easyui-textbox myinput" id="payamount" ></td>
+            </tr>
+            <tr>
+                <td> 配送方式:</td>
+                <td><input style="width: 80%" readonly class="easyui-textbox myinput" id="type" ></td>
+            </tr>
+            <tr>
+                <td> 退款金额:</td>
+                <td><input style="width: 80%;" class="easyui-textbox myinput" id="refundamount" ></td>
+            </tr>
+            <tr>
+                <td>退款备注:</td>
+                <td><input style="width: 80%" prompt="正常退款" class="easyui-textbox myinput" value="正常退款" id="refundremark" ></td>
+            </tr>
+            <tr>
+                <td>操作密码:</td>
+                <td><input style="width: 80%" prompt="请输入操作密码" class="easyui-textbox myinput" id="dopassword" ></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div style="float: right">
+                        <a onclick="doRefund()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-ok'">确定</a>
+                        <a onclick="closeRefundWindow()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-no'">取消</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id= "mydialog" class="easyui-dialog" style="width:300px;height:150px;text-align:center;line-height: 65px;"
+         data-options="title:'系统提示',buttons:'#bb',modal:true,closed:true">
+    </div>
+    <div id="bb">
+        <a href="#" class="easyui-linkbutton" onclick="deleteCityBtn()">确认</a>
+        <a href="#" class="easyui-linkbutton" onclick="cancelBtn()">取消</a>
+    </div>
+</div>
+<script>
+
+    $("#start").datetimebox({
+        stopFirstChangeEvent: false,
+        onChange: function() {
+            var options = $(this).datetimebox('options');
+            if(options.stopFirstChangeEvent) {
+                options.stopFirstChangeEvent = false;
+                return;
+            }
+            //onchange的逻辑
+            var start = $("#start").datetimebox("getValue");
+            var end = $("#end").datetimebox("getValue");
+            var url = "{:url('index/Order/getList')}?start="+start+"&end="+end+"";
+            $("#tt").attr("url",url);
+        }
+    });
+
+    $("#end").datetimebox({
+        stopFirstChangeEvent: false,
+        onChange: function() {
+            var options = $(this).datetimebox('options');
+            if(options.stopFirstChangeEvent) {
+                options.stopFirstChangeEvent = false;
+                return;
+            }
+            //onchange的逻辑
+            var start = $("#start").datetimebox("getValue");
+            var end = $("#end").datetimebox("getValue");
+            var url = "{:url('index/Order/getList')}?start="+start+"&end="+end+"";
+            $("#tt").attr("url",url);
+        }
+    });
+
+    function doSearch() {
+        var start = $("#start").datetimebox('getValue');
+        var end = $("#end").datetimebox('getValue');
+        var orderid = $("#orderid").textbox("getValue");
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: "{:url('index/Order/getList')}",
+            data: {start:start,end:end,orderid:orderid},
+            success: function (result) {
+                $('#tt').datagrid('reload');
+            }
+        });
+    }
+    function refund() {
+        var row = $('#tt').datagrid('getSelected');
+        if (row){
+            $("#refundorderid").textbox("setValue",row.orderid);
+            $("#payamount").textbox("setValue",row.amount);
+            $("#type").textbox("setValue",row.type);
+            $("#refundamount").textbox("setValue",row.amount);
+            $("#transid").textbox("setValue",row.transaction_id);
+            openWindow("#win");
+        }
+    }
+
+    function closeRefundWindow(){
+        closeWindow("#win");
+        window.location.reload(true);
+    }
+
+    function doRefund() {
+        var orderid = $("#refundorderid").textbox("getValue");
+        var payamount = $("#payamount").textbox("getValue");
+        var refundamount = $("#refundamount").textbox("getValue");
+        var refundremark = $("#refundremark").textbox("getValue");
+        var transid = $("#transid").textbox("getValue");
+        var pass = $("#dopassword").textbox("getValue");
+        if(confirm("确定退款"+refundamount+"元吗？")){
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "{:url('index/Order/dorefund')}" ,
+                data: {orderid:orderid,transid:transid,payamount:payamount,refundamount:refundamount,refundremark:refundremark,pass:pass},
+                success: function (result) {
+                    $.messager.show({
+                        title: '系统提示',
+                        msg: result.msg,
+                        showType: 'fade',
+                        timeout: 2000,
+                        style: {
+                            right: '',
+                            bottom: ''
+                        }
+                    });
+                    /*刷新页面*/
+                    closeWindow("#win");
+                    $('#tt').datagrid('reload');
+                }
+            });
+        }else {
+            closeWindow("#win");
+            $('#tt').datagrid('reload');
+        }
+
+    }
+
+
+
+</script>
+
+

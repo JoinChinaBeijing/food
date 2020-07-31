@@ -1,0 +1,203 @@
+<link rel="stylesheet" type="text/css" href="__VENDOR__/easyui/themes/default/easyui.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/wu.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/icon.css" />
+<link rel="stylesheet" type="text/css" href="__VENDOR__/css/admin/city.css" />
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.panel.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.resizable.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.linkbutton.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.pagination.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/locale/easyui-lang-zh_CN.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.datagrid.js"></script>
+<script type="text/javascript" src="__VENDOR__/easyui/plugins/jquery.menu.js"></script>
+<script type="text/javascript" src="__VENDOR__/js/admin/mybase.js"></script>
+<div id="operatBox">
+    <a href="javascript:void(0)" id="addCity" class="easyui-menubutton"
+       data-options="iconCls:'icon-add'" onclick="openAddCityWindow()">添加</a>
+    <a href="javascript:void(0)" id="editCity" class="easyui-menubutton"
+       data-options="iconCls:'icon-edit'" onclick="openEditWindow()">编辑</a>
+</div>
+
+<table id="dg"></table>
+
+<!--添加框-->
+
+<div id="win" class="easyui-window" title="打印机设置（主打印机走默认，配置后厨打印机即可）"
+     data-options="iconCls:'icon-save',modal:true,closed:true,draggable:true,resizable:true"
+     style="top:30;display: none;">
+    <form name="addform" id="addform" action="" method="post"
+          enctype="multipart/form-data">
+        <input type="hidden" name="id" id="myid" value="">
+        <table>
+            <tr>
+                <td> 打印机功能名称 :</td>
+                <td>
+                    <input style="width: 100%;" class="easyui-textbox" id="name" name="name">
+                </td>
+                <td>打印机驱动名称 </td>
+                <td>
+                    <input style="width: 100%;" class="easyui-textbox" id="code" name="code">
+                </td>
+            </tr>
+            <tr>
+                <td> 打印机功能描述:</td>
+                <td colspan="3"><input style="width: 100%;" class="easyui-textbox" id="description" name="desc"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div style="float: right">
+                        <a onclick="save()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-ok'">确定</a>
+                        <a onclick="closeAddWindow()" href="javascript:void(0)" class="easyui-linkbutton"
+                           data-options="iconCls:'icon-no'">取消</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id= "mydialog" class="easyui-dialog" style="width:300px;height:150px;text-align:center;line-height: 65px;"
+     data-options="title:'系统提示',buttons:'#bb',modal:true,closed:true">
+</div>
+<div id="bb">
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="delBtn()">确认</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="cancelBtn()">取消</a>
+</div>
+</div>
+<script>
+    /*转为对象*/
+    prints = JSON.parse('{$prints}');
+    if(prints == null ){
+        prints = "";
+    }
+    $(document).ready(function () {
+        $('#dg').datagrid({
+            pagination: true,
+            rownumbers: true,
+            fitColumns: true,
+            singleSelect: true,
+            data: prints.slice(0, 10),
+            columns: [
+                [
+                    {field: 'id', align: "center", title: "ID", width: 100},
+                    {field: 'name', align: "center", title: "打印机名称", width: 100},
+                    {field: 'desc', align: "center", title: "打印机名描述", width: 100},
+                    {field: 'code', align: "center", title: "打印机驱动名称", width: 100}
+                ]
+            ],
+
+            rowStyler:function(index,row)
+            {
+                if (row.status ==0) {
+                    return 'background-color:pink;color:blue'
+
+                }
+            }
+        });
+        var citypager = $("#dg").datagrid("getPager");
+        citypager.pagination({
+            total: prints.length,
+            pageSize:10,
+            onSelectPage: function (pageNo, pageSize) {
+                var start = (pageNo - 1) * pageSize;
+                var end = start + pageSize;
+                $("#dg").datagrid("loadData", citytlist.slice(start, end));
+                citypager.pagination('refresh', {
+                    total: citytlist.length,
+                    pageNumber: pageNo
+                });
+            }
+        });
+    });
+    /*关闭添加窗口*/
+    function closeAddWindow() {
+        $("#win").window({closed:true});
+        window.location.reload(true);
+    }
+
+    /*打开添加窗口*/
+    function openAddCityWindow() {
+        $("#win").window({closed:false});
+    }
+    /*保存数据*/
+    function save() {
+        var url = "{:url('index/prints/manageAddPrint')}";
+        $('#addform').form('submit', {
+            url: url,
+            onSubmit: function () {
+            },
+            success: function (data) {
+                if(JSON.parse(data).code=='200'){
+                    $.messager.show({
+                        title: '系统提示',
+                        msg: JSON.parse(data).message,
+                       showType: 'fade',
+                        style: {
+                            right: '',
+                            bottom: ''
+                        }
+                    });
+                    $("#win").window({closed:true});
+                    /*刷新页面*/
+                    setTimeout(function(){window.location.reload(true)},3000);
+                }else{
+                    $.messager.show({
+                        title: '系统提示',
+                        msg: JSON.parse(data).message,
+                        showType: 'fade',
+                        style: {
+                            right: '',
+                            bottom: ''
+                        }
+                    });
+                    $("#win").window({closed:true});
+                    setTimeout(function(){window.location.reload(true)},3000);
+                }
+            }
+        });
+    }
+    /*打开编辑窗口*/
+    function openEditWindow() {
+        var row = $('#dg').datagrid('getSelected');
+        if (row){
+            /*给编辑窗口赋值*/
+            $("#myid").val(row.id);
+            $('#description').textbox('setValue', row.desc);
+            $('#code').textbox('setValue', row.code);
+            $('#name').textbox('setValue', row.name);
+            $("#win").window({closed:false});
+        }
+    }
+
+    function del()
+    {
+        var row = $('#dg').datagrid('getSelected');
+        if (row)
+        {
+            $("#mydialog").html("确认删除？");
+            $("#mydialog").window({closed:false});
+        }
+    }
+
+    function delBtn()
+    {
+        var row = $('#dg').datagrid('getSelected');
+        if (row)
+        {
+            $("#mydialog").window({closed:false});
+            deleteData("{:url('prints/del')}",row.id);
+        }
+    }
+
+    /*关闭对话框*/
+    function cancelBtn()
+    {
+        closeWindow("#mydialog");
+    }
+</script>
+
+
+
+
+

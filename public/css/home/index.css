@@ -1,0 +1,199 @@
+body{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.list-left-my{
+    width: 100%;
+    top: 50px;
+    position: relative;
+
+}
+.selfContent>li{
+    width: 26vw;
+    font-size: 1.4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+}
+.selfContent>li>ul{
+    width: 70vw;
+    position: absolute;
+    top:0;
+    left: 26vw;
+    display: none;
+    border-left: 1px solid #ddd;
+    min-height: 80vh;
+
+}
+.selfContent>li>ul>li{
+    width: 69vw;
+    height: 12vh;
+    border-bottom: 1px solid #ddd;
+}
+
+.current{ border-left: 3px solid #39b867;}
+.current a{ color: #39b867;}
+.selfPic{
+    float: left;width: 20vw;height: 12vh;padding-left: 0.5rem;
+}
+.selfPic>a>img{
+    width: 100%;height: 80%;margin-top: 10%;
+}
+.self-right-right{
+    float: right;width: 48vw;
+}
+.self-right-right>div{
+    height: 4.5vh;;width: 47vw;
+}
+.foodname{
+    display: block;font-size:1.4rem;color: #909090; text-align: left;padding: 5px;line-height: 16px;
+}
+.myprice{
+    display: block;font-size:1.2rem;color: red;text-align: left;padding: 5px;line-height: 16px;
+}
+#ingralBox{
+    float: right;
+    display: inline-block;width: 60%;text-align: right;
+    font-size: 1em;color: #80989f;
+}
+#ingralBox>a{
+    font-size: 1em;color: #80989f;
+    text-decoration: underline;
+}
+#footerBox{
+    height: 4.5rem;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+#footerBoxbox{
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    height: 7.5rem;
+    width: 100%;
+    background: #fff;
+}
+.footer-left{
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: black;
+}
+.footer-right{
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background: #39B867;;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+i{
+    color: red;
+}
+.listcart{
+    text-align: center;
+    border-radius: 50%;
+}
+.listcart .dstock{
+    float: right;
+}
+.listcart .dstock .decrease_self{
+    border-radius: 50%;
+    display: none;
+    color: #666;
+    float: left;
+    border: 1px solid #dadada;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.listcart .dstock .textbox{
+    display: none;
+    float: left;
+    border: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.listcart .dstock .increase_self{
+    border-radius: 50%;
+    font-size: 1.6rem;
+    background: #39b867;
+    color: #fff;
+    float: right;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-left: -1px;
+}
+.select {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.select:before, .select:after {
+    content: '';
+    position: absolute;
+    right: 7%;
+    width: 0;
+    height: 0;
+    border-left: 3px outset transparent;
+    border-right: 3px outset transparent;
+}
+.select:before {
+    top: 45%;
+    border-bottom: 3px solid #7f9298;
+}
+.select:after {
+    top: 60%;
+    border-top: 3px solid #7f9298;
+}
+.select > select {
+    position: relative;
+    z-index: 0;
+    color: #80989f;
+    border:none;
+    width: 100%;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.select > select:focus {
+    outline: 0;
+}
+label{
+    margin-bottom: 0;
+    font-weight: 400;
+    height: 100%;
+}
+.am-header{
+    height: 7vh;
+    line-height: 6vh;
+}
+#zhezhao,#zhezhaoa{
+    width: 100%;height: 100vh;background: #000000;opacity: 0.5;position: absolute;z-index: 2;top:0;left: 0;
+}
+#closetipsBox,#closetipsBoxa{
+    width: 80%;height: 30rem;background: white;position: absolute;top: 10rem;z-index: 10;left: 10%;
+}
+#closetipsBox_top,#closetipsBox_topa{
+    width: 100%;height: 85%;padding: 3rem;
+}
+#closeknow,#closeknowa{
+    width: 100%;height: 15%;text-align: center;color:white;line-height: 4.5rem;background: #39B867;
+}
+#myorderfont{
+    color: #E76451;padding-right: 1rem;
+}
